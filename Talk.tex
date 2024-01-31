@@ -135,6 +135,7 @@ National Center for Theoretical Sciences (National Taiwan University)
 %\newtheorem{definition}[theorem]{Definition}
 \theoremstyle{remark}
 \newtheorem*{remark}{Remarks}
+\newtheorem*{gedankenexperiment}{Gedankenexperiment}
 \newtheorem*{idea}{Idea}
 \newtheorem*{motivation}{Motivation}
 \newtheorem*{summary}{Summary}
@@ -147,6 +148,10 @@ National Center for Theoretical Sciences (National Taiwan University)
 \newtheorem*{BackToTheRoots}{Back to the roots}
 
 \AtBeginEnvironment{BackToTheRoots}{%
+  \setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
+  \setbeamercolor{block body}{parent=normal text,use=block title example,bg=pink!10}
+}
+\AtBeginEnvironment{gedankenexperiment}{%
   \setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
   \setbeamercolor{block body}{parent=normal text,use=block title example,bg=pink!10}
 }
@@ -257,31 +262,35 @@ F
 $\rightsquigarrow$ We will use a general connection $\nabla$ instead of $\nabla^0$, and $\nabla$ may not be flat.
 \end{remark}
 \end{frame}
+
+
+
 }
 
-\subsection{Mathematical basics}
 
-\renewcommand\insertreferences{{\tiny Ana Cannas Da Silva, Alan Weinstein. \textit{Geometric models for noncommutative algebras}, \newline volume 10. American Mathematical Society, 1999.}}
+%\subsection{Mathematical basics}
 
-\begin{frame}
-%Instead of Lie algebras we want to use:
-\begin{definition}[Lie algebroids]
-Let $E \to N$ be a vector bundle. Then $E$ is a Lie algebroid, if there is a bundle map $\rho: E \to \mathrm{T}N$, called the \textbf{anchor}, and a Lie algebra structure on $\Gamma(E)$ with Lie bracket $\mleft[\cdot, \cdot\mright]_E$ satisfying
-\ba
-  \mleft[\mu, f \nu\mright]_E = f \mleft[\mu, \nu\mright]_E + \mathcal{L}_{\rho(\mu)}(f) ~ \nu
-\label{eq:E-Leibniz}
-\ea
-for all $f \in C^\infty(N)$ and $\mu, \nu \in \Gamma(E)$.
-\end{definition}
-\pause
-\begin{example}
-\begin{itemize}[<+->]
-	\item $E = \mathrm{T}N$, $\rho = \mathds{1}_{\mathrm{T}N}$
-	\item $E$ a bundle of Lie algebras, $\rho = 0$
-\end{itemize}
-\end{example}
-\end{frame}
-%
+%\renewcommand\insertreferences{{\tiny Ana Cannas Da Silva, Alan Weinstein. \textit{Geometric models for noncommutative algebras}, \newline volume 10. American Mathematical Society, 1999.}}
+
+%\begin{frame}
+%%Instead of Lie algebras we want to use:
+%\begin{definition}[Lie algebroids]
+%Let $E \to N$ be a vector bundle. Then $E$ is a Lie algebroid, if there is a bundle map $\rho: E \to \mathrm{T}N$, called the \textbf{anchor}, and a Lie algebra structure on $\Gamma(E)$ with Lie bracket $\mleft[\cdot, \cdot\mright]_E$ satisfying
+%\ba
+  %\mleft[\mu, f \nu\mright]_E = f \mleft[\mu, \nu\mright]_E + \mathcal{L}_{\rho(\mu)}(f) ~ \nu
+%\label{eq:E-Leibniz}
+%\ea
+%for all $f \in C^\infty(N)$ and $\mu, \nu \in \Gamma(E)$.
+%\end{definition}
+%\pause
+%\begin{example}
+%\begin{itemize}[<+->]
+	%\item $E = \mathrm{T}N$, $\rho = \mathds{1}_{\mathrm{T}N}$
+	%\item $E$ a bundle of Lie algebras, $\rho = 0$
+%\end{itemize}
+%\end{example}
+%\end{frame}
+%%
 %\renewcommand\insertreferences{{\tiny Yvette Kosmann-Schwarzbach and Franco Magri. Poisson-Nijenhuis structures. \newline \textit{In Annales de l’IHP Physique théorique}, volume 53, pages 35–81, 1990.}}
 %
 %\begin{frame}
@@ -291,258 +300,351 @@ for all $f \in C^\infty(N)$ and $\mu, \nu \in \Gamma(E)$.
 %\end{proposition}
 %\end{frame}
 
-\renewcommand\insertreferences{{\tiny Ana Cannas Da Silva, Alan Weinstein. \textit{Geometric models for noncommutative algebras}, \newline volume 10. American Mathematical Society, 1999.}}
+%\renewcommand\insertreferences{{\tiny Ana Cannas Da Silva, Alan Weinstein. \textit{Geometric models for noncommutative algebras}, \newline volume 10. American Mathematical Society, 1999.}}
 
-\begin{frame}
-The classical formalism will correspond to:
-\begin{proposition}[Action Lie algebroids]
-Let $\mleft(\mathfrak{g}, \mleft[\cdot, \cdot \mright]_{\mathfrak{g}}\mright)$ be a Lie algebra with a $\mathfrak{g}$-action $\gamma$ on $N$. Then there is a \textbf{unique} Lie algebroid structure on $E \coloneqq N \times \mathfrak{g}$ as a vector bundle over $N$ such that
-\ba
-\rho(\nu)
-&=
-\gamma(\nu),
-\\
-\mleft[\mu, \nu\mright]_E
-&=
-\mleft[\mu, \nu\mright]_{\mathfrak{g}}
-\ea
-for all constant sections $\mu, \nu \in \Gamma(E)$.
-\end{proposition}
-\end{frame}
+%\begin{frame}
+%The classical formalism will correspond to:
+%\begin{proposition}[Action Lie algebroids]
+%Let $\mleft(\mathfrak{g}, \mleft[\cdot, \cdot \mright]_{\mathfrak{g}}\mright)$ be a Lie algebra with a $\mathfrak{g}$-action $\gamma$ on $N$. Then there is a \textbf{unique} Lie algebroid structure on $E \coloneqq N \times \mathfrak{g}$ as a vector bundle over $N$ such that
+%\ba
+%\rho(\nu)
+%&=
+%\gamma(\nu),
+%\\
+%\mleft[\mu, \nu\mright]_E
+%&=
+%\mleft[\mu, \nu\mright]_{\mathfrak{g}}
+%\ea
+%for all constant sections $\mu, \nu \in \Gamma(E)$.
+%\end{proposition}
+%\end{frame}
 
-{
-\setbeamertemplate{footline}{}
-\begin{frame}
-\begin{table}[h!]
-		\begin{tabularx}{\textwidth}{X X}
-			\rowcolor{gray}
-			Classical formalism & CYMH GT \\
-			Lie algebra $\mathfrak{g}$ as $M \times \mathfrak{g}$ & Lie algebroid $E \to N$ \\
-			\rowcolor{Gray}
-			$\mathfrak{g}$-action $\gamma$ & Anchor $\rho$ of $E$ \\ 
-			\rowcolor{Gray}
-			& \& \textbf{$E$-connections} as lift of $\rho$ \\
-			Canonical flat connection $\nabla^0$ on $M \times \mathfrak{g}$ & General connection $\nabla$ on $E$
-		\end{tabularx}
-\end{table}
-			%\newline
-			\pause
-		$\rightsquigarrow$ $E$-connections similar to vector bundle connections but Leibniz rule along $\rho$, \textit{i.e.}~only lifting vector fields in the image of $\rho$
-\end{frame}
-}
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}
+%\begin{table}[h!]
+		%\begin{tabularx}{\textwidth}{X X}
+			%\rowcolor{gray}
+			%Classical formalism & CYMH GT \\
+			%Lie algebra $\mathfrak{g}$ as $M \times \mathfrak{g}$ & Lie algebroid $E \to N$ \\
+			%\rowcolor{Gray}
+			%$\mathfrak{g}$-action $\gamma$ & Anchor $\rho$ of $E$ \\ 
+			%\rowcolor{Gray}
+			%& \& \textbf{$E$-connections} as lift of $\rho$ \\
+			%Canonical flat connection $\nabla^0$ on $M \times \mathfrak{g}$ & General connection $\nabla$ on $E$
+		%\end{tabularx}
+%\end{table}
+			%%\newline
+			%\pause
+		%$\rightsquigarrow$ $E$-connections similar to vector bundle connections but Leibniz rule along $\rho$, \textit{i.e.}~only lifting vector fields in the image of $\rho$
+%\end{frame}
+%}
 
-\renewcommand\insertreferences{{ Mohamed Boucetta. Riemannian geometry of Lie algebroids. \newline \textit{Journal of the Egyptian Mathematical Society}, 19(1-2):57–70, 2011. }}
-
-\begin{frame}
-\begin{example}[$E$-connection ${}^E\nabla$ on $V$]
-$\nabla^\prime$ a vector bundle connection on $V \to N$, then
-\ba
-{}^E\nabla_\nu v
-&\coloneqq
-\nabla^\prime_{\rho(\nu)} v
-\ea
-for all $\nu \in \Gamma(E)$ and $v \in \Gamma(V)$. In short denoted by $\nabla^\prime_\rho$.
-\end{example}
-\end{frame}
-
-\renewcommand\insertreferences{{\tiny Camilo Arias Abad, Marius Crainic. Representations up to homotopy of Lie algebroids. \newline \textit{Journal für die reine und angewandte Mathematik (Crelles Journal)}, 2012(663):91–126, 2012.}}
-
-\begin{frame}
-\begin{example}
-For $\nabla$ a connection on $E$ we have the \textbf{basic connection} given as a pair of $E$-connections on $E$ and on $\mathrm{T}N$ by
-\ba
-\nabla^{\mathrm{bas}}_\nu \mu
-&\coloneqq
-\mleft[ \nu, \mu \mright]_E
-	+ \nabla_{\rho(\mu)} \nu,
-\\
-\nabla^{\mathrm{bas}}_\nu X
-&\coloneqq
-\mleft[ \rho(\nu), X \mright]
-	+ \rho\mleft(\nabla_{X} \nu\mright)
-\ea
-for all $X \in \mathfrak{X}(N)$ and $\nu, \mu \in \Gamma(E)$.
-\end{example}
-\pause
-\begin{remark}[Encoding of Lie algebra representations]
-Test this with trivial bundles and canonical flat connection $\nabla^0$, \textit{i.e.}~$E = N \times \mathfrak{g}$ and $\nabla^0 \nu = 0$ for constant sections $\nu$.
-\end{remark}
-\end{frame}
+%\renewcommand\insertreferences{{ Mohamed Boucetta. Riemannian geometry of Lie algebroids. \newline \textit{Journal of the Egyptian Mathematical Society}, 19(1-2):57–70, 2011. }}
+%
+%\begin{frame}
+%\begin{example}[$E$-connection ${}^E\nabla$ on $V$]
+%$\nabla^\prime$ a vector bundle connection on $V \to N$, then
+%\ba
+%{}^E\nabla_\nu v
+%&\coloneqq
+%\nabla^\prime_{\rho(\nu)} v
+%\ea
+%for all $\nu \in \Gamma(E)$ and $v \in \Gamma(V)$. In short denoted by $\nabla^\prime_\rho$.
+%\end{example}
+%\end{frame}
 
 %\renewcommand\insertreferences{{\tiny Camilo Arias Abad, Marius Crainic. Representations up to homotopy of Lie algebroids. \newline \textit{Journal für die reine und angewandte Mathematik (Crelles Journal)}, 2012(663):91–126, 2012.}}
-\begin{frame}
-\begin{definition}[Basic curvature]
-Let $\nabla$ be a connection on $E$.
-The \textbf{basic curvature $R_\nabla^{\mathrm{bas}}$} is defined as an element of $\Gamma\left(\bigwedge^2E^* \otimes \mathrm{T}^*N \otimes E \right)$ by
-\ba
-R^{\mathrm{bas}}_\nabla(\mu, \nu) X
-&\coloneqq
-\nabla_X\mleft(\mleft[\mu, \nu\mright]_E\mright) 
-	- \mleft[ \nabla_X \mu, \nu \mright]_E 
-	- \mleft[ \mu, \nabla_X \nu \mright]_E 
-\nonumber\\
-&\hspace{1cm}
-	- \nabla_{\nabla^{\mathrm{bas}}_\nu X} \mu 
-	+ \nabla_{\nabla^{\mathrm{bas}}_\mu X} \nu,
-\ea
-where $\mu, \nu \in \Gamma(E)$ and $X \in \mathfrak{X}(N)$.
-\end{definition}
 
-\pause
-\begin{proposition}
-We recover the curvature of the basic connection:
-\ba
-R_{\nabla^{\mathrm{bas}}}
-&=
-\mleft\{
-\begin{array}{ll}
-- R_\nabla^{\mathrm{bas}}(\cdot, \cdot) \circ \rho, & \text{on $E$}, \\
-- \rho \circ R_\nabla^{\mathrm{bas}}, & \text{on $\mathrm{T}N$}.
-\end{array}
-\mright.
-\ea
-\end{proposition}
-\end{frame}
-
-\subsection{Curved Yang-Mills-Higgs gauge theory}
-
-{
-\makeatletter
-\setbeamertemplate{footline}
-{
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{author in head/foot}
-		Sources
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}
-		Alexei Kotov and Thomas Strobl. Curving Yang-Mills-Higgs gauge theories. \textit{Physical Review D}, 92(8):085032, 2015.
-  \end{beamercolorbox}%
-  %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    %%\insertframenumber{} 
-		%%/ \inserttotalframenumber\hspace*{2ex} 
-  %\end{beamercolorbox}
-	}%
-  \vskip0pt%
-}
-\begin{frame}
-\begin{definition}[Space of fields]
-Fields are a pair consisting of:
-\begin{itemize}[<+->]
-	\item Higgs field $\Phi \in C^\infty(M;N)$
-	\item Field of gauge bosons $A \in \Omega^1(M; \Phi^*E)$
-\end{itemize}
-\end{definition}
-%\end{frame}
-\pause
 %\begin{frame}
-\begin{definition}[Minimal coupling]
-\textbf{Minimal coupling} $\mathfrak{D}$, $(\Phi, A) \mapsto \mathfrak{D}(\Phi, A) \in \Omega^1(M; \Phi^*\mathrm{T}N)$, by
-\ba
-\mathfrak{D}(\Phi, A)
-&\coloneqq
-\mathfrak{D}^A \Phi
-\coloneqq
-\mathrm{D}\Phi
-	- (\Phi^*\rho)(A),
-\ea
-where $\mathrm{D}\Phi: \mathrm{T}M \to \mathrm{T}N$ is the tangent map.
-\end{definition}
-\end{frame}
+%\begin{example}
+%For $\nabla$ a connection on $E$ we have the \textbf{basic connection} given as a pair of $E$-connections on $E$ and on $\mathrm{T}N$ by
+%\ba
+%\nabla^{\mathrm{bas}}_\nu \mu
+%&\coloneqq
+%\mleft[ \nu, \mu \mright]_E
+	%+ \nabla_{\rho(\mu)} \nu,
+%\\
+%\nabla^{\mathrm{bas}}_\nu X
+%&\coloneqq
+%\mleft[ \rho(\nu), X \mright]
+	%+ \rho\mleft(\nabla_{X} \nu\mright)
+%\ea
+%for all $X \in \mathfrak{X}(N)$ and $\nu, \mu \in \Gamma(E)$.
+%\end{example}
+%\pause
+%\begin{remark}[Encoding of Lie algebra representations]
+%Test this with trivial bundles and canonical flat connection $\nabla^0$, \textit{i.e.}~$E = N \times \mathfrak{g}$ and $\nabla^0 \nu = 0$ for constant sections $\nu$.
+%\end{remark}
+%\end{frame}
 
-\begin{frame}
-\setbeamercovered{invisible}
-\begin{definition}[Field strength]
-Let $\nabla$ be a connection on $E$. We define the \textbf{field strength $F$}, $(\Phi, A) \mapsto F(\Phi, A) \in \Omega^2(M; \Phi^*E)$, by
-\ba
-F(\Phi, A)
-\coloneqq
-\mathrm{d}^{\Phi^*\nabla} A
-	+ \frac{1}{2} \mleft( \Phi^* t_{\nabla^{\mathrm{bas}}} \mright)\mleft( A \stackrel{\wedge}{,} A \mright),
-\ea
-where $t_{\nabla^{\mathrm{bas}}}$ is the torsion of $\nabla^{\mathrm{bas}}$ on $E$ and $\mathrm{d}^{\Phi^*\nabla}$ the exterior covariant derivative of $\Phi^*\nabla$.
-\end{definition}
-\pause
-\begin{definition}[Generalised field strength]
-Let $\zeta$ be an element of $\Omega^2(N; E)$, then we define the \textbf{generalised field strength $\mathcal{F}$} by
-\ba
-\mathcal{F}(\Phi,A)
-&\coloneqq
-F(\Phi, A)
-	+ \frac{1}{2} (\Phi^*\zeta)\mleft( \mathfrak{D}^A \Phi \stackrel{\wedge}{,} \mathfrak{D}^A \Phi \mright).
-\ea
-\end{definition}
-\end{frame}
+%\renewcommand\insertreferences{{\tiny Camilo Arias Abad, Marius Crainic. Representations up to homotopy of Lie algebroids. \newline \textit{Journal für die reine und angewandte Mathematik (Crelles Journal)}, 2012(663):91–126, 2012.}}
+%\begin{frame}
+%\begin{definition}[Basic curvature]
+%Let $\nabla$ be a connection on $E$.
+%The \textbf{basic curvature $R_\nabla^{\mathrm{bas}}$} is defined as an element of $\Gamma\left(\bigwedge^2E^* \otimes \mathrm{T}^*N \otimes E \right)$ by
+%\ba
+%R^{\mathrm{bas}}_\nabla(\mu, \nu) X
+%&\coloneqq
+%\nabla_X\mleft(\mleft[\mu, \nu\mright]_E\mright) 
+	%- \mleft[ \nabla_X \mu, \nu \mright]_E 
+	%- \mleft[ \mu, \nabla_X \nu \mright]_E 
+%\nonumber\\
+%&\hspace{1cm}
+	%- \nabla_{\nabla^{\mathrm{bas}}_\nu X} \mu 
+	%+ \nabla_{\nabla^{\mathrm{bas}}_\mu X} \nu,
+%\ea
+%where $\mu, \nu \in \Gamma(E)$ and $X \in \mathfrak{X}(N)$.
+%\end{definition}
+%
+%\pause
+%\begin{proposition}
+%We recover the curvature of the basic connection:
+%\ba
+%R_{\nabla^{\mathrm{bas}}}
+%&=
+%\mleft\{
+%\begin{array}{ll}
+%- R_\nabla^{\mathrm{bas}}(\cdot, \cdot) \circ \rho, & \text{on $E$}, \\
+%- \rho \circ R_\nabla^{\mathrm{bas}}, & \text{on $\mathrm{T}N$}.
+%\end{array}
+%\mright.
+%\ea
+%\end{proposition}
+%\end{frame}
 
-\begin{frame}
-\begin{definition}[Curved Yang-Mills-Higgs (CYMH) Lagrangian]
-Let $\kappa$ be a fibre metric on $E$, then the \textbf{curved Yang-Mills-Higgs Lagrangian $\mathfrak{L}_{\mathrm{CYMH}}$}, $(\Phi, A) \mapsto \mathfrak{L}_{\mathrm{CYMH}}(\Phi, A) \in \Omega^{\mathrm{dim}(M)}(M)$, is defined by
-\ba
-\mathfrak{L}_{\mathrm{CYMH}}(\Phi, A)
-&\coloneqq
-- \frac{1}{2} \mleft( \Phi^*\kappa \mright)\bigl(\mathcal{F}(\Phi, A) \stackrel{\wedge}{,} *\mathcal{F}(\Phi, A) \bigr)
-\nonumber \\
-&\hspace{1cm}
-	+ \mleft( \Phi^*g \mright)\mleft(\mathfrak{D}^A \Phi \stackrel{\wedge}{,} *\mathfrak{D}^A \Phi \mright)
-	- *(\Phi^*\mathcal{V}),
-\ea
-where $*$ is the Hodge star operator related to the spacetime metric $\eta$.
-\end{definition}
-\end{frame}
+%\subsection{Curved Yang-Mills-Higgs gauge theory}
+%
+%{
+%\makeatletter
+%\setbeamertemplate{footline}
+%{
+  %\leavevmode%
+  %\hbox{%
+  %\begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    %\usebeamerfont{author in head/foot}
+		%Sources
+  %\end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    %\usebeamerfont{title in head/foot}
+		%Alexei Kotov and Thomas Strobl. Curving Yang-Mills-Higgs gauge theories. \textit{Physical Review D}, 92(8):085032, 2015.
+  %\end{beamercolorbox}%
+  %%\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %%\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %%%\insertframenumber{} 
+		%%%/ \inserttotalframenumber\hspace*{2ex} 
+  %%\end{beamercolorbox}
+	%}%
+  %\vskip0pt%
+%}
+%\begin{frame}
+%\begin{definition}[Space of fields]
+%Fields are a pair consisting of:
+%\begin{itemize}[<+->]
+	%\item Higgs field $\Phi \in C^\infty(M;N)$
+	%\item Field of gauge bosons $A \in \Omega^1(M; \Phi^*E)$
+%\end{itemize}
+%\end{definition}
+%%\end{frame}
+%\pause
+%%\begin{frame}
+%\begin{definition}[Minimal coupling]
+%\textbf{Minimal coupling} $\mathfrak{D}$, $(\Phi, A) \mapsto \mathfrak{D}(\Phi, A) \in \Omega^1(M; \Phi^*\mathrm{T}N)$, by
+%\ba
+%\mathfrak{D}(\Phi, A)
+%&\coloneqq
+%\mathfrak{D}^A \Phi
+%\coloneqq
+%\mathrm{D}\Phi
+	%- (\Phi^*\rho)(A),
+%\ea
+%where $\mathrm{D}\Phi: \mathrm{T}M \to \mathrm{T}N$ is the tangent map.
+%\end{definition}
+%\end{frame}
 
-%Add slide about the aim of CYMH GT
-
-\begin{frame}
-\begin{definition}[CYMH GT]
-Assume we have additionally the \textbf{compatibility conditions}
-\ba
-	R_\nabla + \mathrm{d}^{\nabla^{\mathrm{bas}}} \zeta &= 0,\label{EqMyFormulationOfZetaCondition} \\
-	R_\nabla^{\mathrm{bas}} &= 0, \label{VanishingBasicCurvComp} \\
-	\nabla^{\mathrm{bas}} \kappa &= 0, \\
-	\nabla^{\mathrm{bas}} g &= 0, \\
-	\mathcal{L}_\rho \mathcal{V} &= 0,
-\ea
-then we say that we have a \textbf{curved Yang-Mills-Higgs gauge theory}.
-\pause
-
-We say that we have a \textbf{pre-classical gauge theory}, if $\nabla$ is flat.
-\pause
-
-If we have additionally $\zeta \equiv 0$, then we say that we have a \textbf{classical gauge theory}.
-\end{definition}
-\end{frame}
-
-\begin{frame}{Summary}
-\begin{center}
-	\begin{tikzcd}[ampersand replacement=\&, column sep=small]
-		\Phi^*E \arrow{d} \& (E, \mleft[ \cdot, \cdot \mright]_E, \kappa, \nabla) \arrow{d} \arrow{rd}{\rho} \\
-		M \arrow[r, "\Phi"] \& (N, g) \& \arrow{l} \mathrm{T}N \arrow[lu, bend right, swap, "\zeta \in \Omega^2"] 
-	\end{tikzcd}
-\end{center}
-
-$\rightsquigarrow$ Together with the compatibility conditions we have gauge invariance, that is,
-\ba
-\delta_\varepsilon \mathfrak{L}_{\mathrm{CYMH}}
-&=
-0.
-\ea
-\pause
-\begin{remark}[{[S.-R.\ F.]}]
-If $\rho \equiv 0$, then $\varepsilon \in \Gamma(\Phi^*E)$ and
-\bas
-\delta_\varepsilon \Phi&=0,&
-\delta_\varepsilon A&= \mleft[ \varepsilon, A \mright]_E -\mathrm{d}^{\Phi^*\nabla}\varepsilon.
-\eas
-\end{remark}
-\end{frame}
-}
+%\begin{frame}
+%\setbeamercovered{invisible}
+%\begin{definition}[Field strength]
+%Let $\nabla$ be a connection on $E$. We define the \textbf{field strength $F$}, $(\Phi, A) \mapsto F(\Phi, A) \in \Omega^2(M; \Phi^*E)$, by
+%\ba
+%F(\Phi, A)
+%\coloneqq
+%\mathrm{d}^{\Phi^*\nabla} A
+	%+ \frac{1}{2} \mleft( \Phi^* t_{\nabla^{\mathrm{bas}}} \mright)\mleft( A \stackrel{\wedge}{,} A \mright),
+%\ea
+%where $t_{\nabla^{\mathrm{bas}}}$ is the torsion of $\nabla^{\mathrm{bas}}$ on $E$ and $\mathrm{d}^{\Phi^*\nabla}$ the exterior covariant derivative of $\Phi^*\nabla$.
+%\end{definition}
+%\pause
+%\begin{definition}[Generalised field strength]
+%Let $\zeta$ be an element of $\Omega^2(N; E)$, then we define the \textbf{generalised field strength $\mathcal{F}$} by
+%\ba
+%\mathcal{F}(\Phi,A)
+%&\coloneqq
+%F(\Phi, A)
+	%+ \frac{1}{2} (\Phi^*\zeta)\mleft( \mathfrak{D}^A \Phi \stackrel{\wedge}{,} \mathfrak{D}^A \Phi \mright).
+%\ea
+%\end{definition}
+%\end{frame}
+%
+%\begin{frame}
+%\begin{definition}[Curved Yang-Mills-Higgs (CYMH) Lagrangian]
+%Let $\kappa$ be a fibre metric on $E$, then the \textbf{curved Yang-Mills-Higgs Lagrangian $\mathfrak{L}_{\mathrm{CYMH}}$}, $(\Phi, A) \mapsto \mathfrak{L}_{\mathrm{CYMH}}(\Phi, A) \in \Omega^{\mathrm{dim}(M)}(M)$, is defined by
+%\ba
+%\mathfrak{L}_{\mathrm{CYMH}}(\Phi, A)
+%&\coloneqq
+%- \frac{1}{2} \mleft( \Phi^*\kappa \mright)\bigl(\mathcal{F}(\Phi, A) \stackrel{\wedge}{,} *\mathcal{F}(\Phi, A) \bigr)
+%\nonumber \\
+%&\hspace{1cm}
+	%+ \mleft( \Phi^*g \mright)\mleft(\mathfrak{D}^A \Phi \stackrel{\wedge}{,} *\mathfrak{D}^A \Phi \mright)
+	%- *(\Phi^*\mathcal{V}),
+%\ea
+%where $*$ is the Hodge star operator related to the spacetime metric $\eta$.
+%\end{definition}
+%\end{frame}
+%
+%%Add slide about the aim of CYMH GT
+%
+%\begin{frame}
+%\begin{definition}[CYMH GT]
+%Assume we have additionally the \textbf{compatibility conditions}
+%\ba
+	%R_\nabla + \mathrm{d}^{\nabla^{\mathrm{bas}}} \zeta &= 0,\label{EqMyFormulationOfZetaCondition} \\
+	%R_\nabla^{\mathrm{bas}} &= 0, \label{VanishingBasicCurvComp} \\
+	%\nabla^{\mathrm{bas}} \kappa &= 0, \\
+	%\nabla^{\mathrm{bas}} g &= 0, \\
+	%\mathcal{L}_\rho \mathcal{V} &= 0,
+%\ea
+%then we say that we have a \textbf{curved Yang-Mills-Higgs gauge theory}.
+%\pause
+%
+%We say that we have a \textbf{pre-classical gauge theory}, if $\nabla$ is flat.
+%\pause
+%
+%If we have additionally $\zeta \equiv 0$, then we say that we have a \textbf{classical gauge theory}.
+%\end{definition}
+%\end{frame}
+%
+%\begin{frame}{Summary}
+%\begin{center}
+	%\begin{tikzcd}[ampersand replacement=\&, column sep=small]
+		%\Phi^*E \arrow{d} \& (E, \mleft[ \cdot, \cdot \mright]_E, \kappa, \nabla) \arrow{d} \arrow{rd}{\rho} \\
+		%M \arrow[r, "\Phi"] \& (N, g) \& \arrow{l} \mathrm{T}N \arrow[lu, bend right, swap, "\zeta \in \Omega^2"] 
+	%\end{tikzcd}
+%\end{center}
+%
+%$\rightsquigarrow$ Together with the compatibility conditions we have gauge invariance, that is,
+%\ba
+%\delta_\varepsilon \mathfrak{L}_{\mathrm{CYMH}}
+%&=
+%0.
+%\ea
+%\pause
+%\begin{remark}[{[S.-R.\ F.]}]
+%If $\rho \equiv 0$, then $\varepsilon \in \Gamma(\Phi^*E)$ and
+%\bas
+%\delta_\varepsilon \Phi&=0,&
+%\delta_\varepsilon A&= \mleft[ \varepsilon, A \mright]_E -\mathrm{d}^{\Phi^*\nabla}\varepsilon.
+%\eas
+%\end{remark}
+%\end{frame}
+%}
 
 \subsection{Field Redefinition}
 {
 \setbeamertemplate{footline}{}
+
+\begin{frame}
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
+%$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathup{Ad}(P)
+	\arrow[hook]{r}
+	\&
+	\mathup{At}(P)
+	\arrow[two heads]{r}
+	\&
+	\mathrm{T}M
+	\end{tikzcd}
+\end{center}
+ 
+	where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	\pause
+	\begin{gedankenexperiment}
+	\begin{enumerate}
+		\item Adjoint connection $\leftrightarrow$ Ehresmann connection on $P$. 
+		\item As parallel transport along a curve $\gamma$:
+		\begin{equation*}
+		\mathup{PT}_\gamma^{\mathup{Ad}(P)}([p, v])
+		=
+		\mleft[ \mathup{PT}_\gamma^P(p), v \mright]
+		\end{equation*}
+	\end{enumerate}
+	\end{gedankenexperiment}
+\end{frame}
+
+\begin{frame}
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
+%$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathup{Ad}(P)
+	\arrow[hook]{r}
+	\&
+	\mathup{At}(P)
+	\arrow[two heads]{r}
+	\&
+	\mathrm{T}M
+	\end{tikzcd}
+\end{center}
+ 
+	where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	
+	\begin{gedankenexperiment}
+	\begin{enumerate}
+		\item Adjoint connection $\leftrightarrow$ Ehresmann connection on $P$. 
+		\item As parallel transport:
+		\begin{equation*}
+		\mathup{PT}_\gamma^{\mathup{Ad}(P)}([p, v])
+		=
+		\mleft[ \mathup{PT}_\gamma^P(p), \mathup{PT}_\gamma^0(v) \mright],
+		\end{equation*}
+		Lie algebra $\mathfrak{g}$ as trivial bundle w/ canonical flat connection
+	\end{enumerate}
+	\end{gedankenexperiment}
+\end{frame}
+
+\begin{frame}
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
+%$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	\mathup{Ad}(P)
+	\arrow[hook]{r}
+	\&
+	\mathup{At}(P)
+	\arrow[two heads]{r}
+	\&
+	\mathrm{T}M
+	\end{tikzcd}
+\end{center}
+ 
+	where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	
+	\begin{gedankenexperiment}
+	\begin{enumerate}
+		\item Adjoint connection $\leftrightarrow$ Ehresmann connection on $P$. 
+		\item As parallel transport:
+		\begin{equation*}
+		\mathup{PT}_\gamma^{\mathup{Ad}(P)}([p, v])
+		=
+		\mleft[ \mathup{PT}_\gamma^P(p){\color[rgb]{0.24,0.7,0.44} \cdot \kappa_\gamma}, {\color[rgb]{0.24,0.7,0.44} \kappa_\gamma^{-1} \cdot} \mathup{PT}_\gamma^0(v) \mright],
+		\end{equation*}
+		Lie algebra $\mathfrak{g}$ as trivial bundle w/ canonical flat connection, $\kappa_\gamma$ values in $G$
+	\end{enumerate}
+	\end{gedankenexperiment}
+\end{frame}
+
 
 \begin{frame}
 \begin{motivation}
