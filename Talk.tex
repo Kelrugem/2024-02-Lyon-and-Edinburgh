@@ -186,7 +186,7 @@ National Center for Theoretical Sciences (National Taiwan University)
 \end{frame} 
 }
 
-\section[Infinitesimal cYM]{Infinitesimal Version}
+\section[cYM]{Curved Yang-Mills gauge theory}
 
 {
 \setbeamertemplate{footline}{}
@@ -647,223 +647,22 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
 
 
 \begin{frame}
+\begin{theorem}[Field Redefinitions {S.-R.\ F.}]
+%\begin{itemize}[<+->]
+This leads to an equivalence relation of gauge theories, preserving dynamics and kinematics.
+
+But: In the {\color[rgb]{0.24,0.7,0.44} curved} sense! Curvature terms are produced.
+\end{theorem}
+\pause
 \begin{motivation}[{S.-R.\ F.}]
-\begin{itemize}[<+->]
-	\item This leads to an equivalence relation of gauge theories (in the {\color[rgb]{0.24,0.7,0.44} curved} sense!), preserving dynamics and kinematics
-	
+\begin{enumerate}
+	\item How to formulate gauge theory such that it is invariant under field redefinitions?
 	\item Are there curved theories which are not equivalent to classical ones?
-\end{itemize}
+\end{enumerate}
 \end{motivation}
+
+
 \end{frame}
-
-\begin{frame}
-\begin{definition}[Field redefinition, {[S.-R. F.]}]
-Let $\lambda \in \Omega^1(N; E)$ such that $\Lambda \coloneqq \mathds{1}_E - \lambda \circ \rho$ is an automorphism of $E$. We then define the \textbf{field redefinitions} by 
-\ba\label{EqFieldRedefFuerA}
-\widetilde{A}^\lambda
-&\coloneqq 
-\mleft( \Phi^* \Lambda \mright) (A)+ \Phi^! \lambda,
-\\
-\widetilde{\nabla}^\lambda
-&\coloneqq
-\nabla
-	+ \mleft( \Lambda \circ \mathrm{d}^{\nabla^{\mathrm{bas}}} \circ \Lambda^{-1} \mright) \lambda,
-\label{FieldTrafoOfNabla} \\
-\widetilde{\kappa}^\lambda
-&\coloneqq
-\kappa \circ \mleft( \Lambda^{-1}, \Lambda^{-1} \mright),
-\label{FieldTrafoOfKappa} \\
-\widetilde{g}^\lambda
-&\coloneqq
-g \circ \mleft( \widehat{\Lambda}^{-1}, \widehat{\Lambda}^{-1} \mright), \label{FieldTrafoOfG}
-\ea
-where $\widehat{\Lambda} \coloneqq \mathds{1}_{\mathrm{T}N} - \rho \circ \lambda$, and for all $X, Y \in \mathfrak{X}(N)$ we also define
-\ba
-&\widetilde{\zeta}^\lambda\mleft(\widehat{\Lambda}(X),\widehat{\Lambda}(Y)\mright)
-\nonumber \\
-&\coloneqq
-\Lambda\bigl(
-	\zeta\mleft( X, Y \mright)
-\bigr)
-	- \mleft(\mathrm{d}^{\widetilde{\nabla}^\lambda} \lambda\mright)(X,Y)
-	+ t_{\widetilde{\nabla}^\lambda_\rho}(\lambda(X), \lambda(Y)).
-\ea
-\end{definition}
-\end{frame}
-
-\begin{frame}
-\begin{proposition}[{[S.-R. F.]}]
-\begin{itemize}
-	\item Field redefinitions define an equivalence relation of CYMH gauge theories
-	\item $\widetilde{\mathfrak{L}}^\lambda_{\mathrm{CYMH}} = \mathfrak{L}_{\mathrm{CYMH}}$
-\end{itemize}
-\end{proposition}
-%\vfill
-\pause
-Let us now apply a field redefinition in order to study whether $\nabla$ and $\zeta$ can become flat and zero, respectively.
-\end{frame}
-}
-
-\subsection{Classification}
-
-{
-\setbeamertemplate{footline}{}
-\begin{frame}{What happens in the case of Lie algebra bundles?}
-\begin{example}[Lie algebra bundles (LABs)]
-\begin{itemize}[<+->]
-	\item $E = \mathcal{g}$ an LAB ($\rho \equiv 0$) with a field of Lie brackets $\mleft[ \cdot, \cdot \mright]_{\mathcal{g}} \in \Gamma\mleft( \bigwedge^2{\mathcal{g}}^* \otimes {\mathcal{g}} \mright)$ which restricts to the bracket of a given Lie algebra $\mathfrak{g}$
-\end{itemize}
-\pause
-Compatibilities:
-\begin{itemize}[<+->]
-	\item $\kappa$ needs to be $\mathrm{ad}$-invariant
-	\item We need
-\ba
-\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
-&=
-\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
-	+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
-R_\nabla(Y, Z) \mu
-&=
-\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}
-\ea
-for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$.
-\end{itemize}
-\end{example}
-\end{frame}
-\begin{frame}
-\begin{theorem}[Invariant for LABs, {[S.-R. F.]}]
-We have
-\ba	
-\mathrm{d}^{\widetilde{\nabla}^\lambda} \widetilde{\zeta}^\lambda = \mathrm{d}^\nabla \zeta,
-\ea
-and $\mathrm{d}^\nabla \zeta$ has values in the centre of ${\mathcal{g}}$.
-\end{theorem}
-\end{frame}
-
-\begin{frame}{Behaviour of the field redefinition of $\zeta$}
-\begin{theorem}[Existence of non-classical theories, {[S.-R. F.]}]
-If $\mathrm{d}^\nabla \zeta \neq 0$, then there is no field redefinition such that $\widetilde{\zeta}^\lambda = 0$.
-\end{theorem}
-\pause
-\begin{remark}
-Starting with a classical theory:
-
-If $\mathrm{dim}(N) \geq 3$ and if Lie algebra $\mathfrak{g}$ has a non-zero centre, then we can always construct a pre-classical CYMH GT which is not a classical one by adding a $\zeta$ with $\mathrm{d}^\nabla \zeta \neq 0$.
-\end{remark}
-\pause
-However, by $R_\nabla = \mathrm{ad}_{\mathcal{g}} \circ \zeta$ it may still be that $\nabla$ becomes flat.
-\end{frame}
-
-\begin{frame}{Turning to the field redefinition of $\nabla$:}
-\begin{theorem}[Differential on centre-valued forms, {[S.-R. F.]}]
-$\nabla$ restricts to the centre of ${\mathcal{g}}$ and induces a differential $\mathrm{d}^\Xi$ on centre-valued forms. Moreover, $\mathrm{d}^\Xi$ is independent of the field redefinitions.
-\end{theorem}
-\pause
-\begin{proof}[Sketch of proof]
-Recall
-\bas
-\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
-&=
-\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
-	+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
-R_\nabla(Y, Z) \mu
-&=
-\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}, \\
-\widetilde{\nabla}^\lambda_Y \mu
-&=
-\nabla_Y \mu
-- \mleft[\lambda(Y), \mu\mright]_{\mathcal{g}},
-\eas
-for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$. Then insert $\mu$ with values in the centre.
-\end{proof}
-\end{frame}
-
-\begin{frame}
-\begin{theorem}[Closedness of $\mathrm{d}^\nabla \zeta$, {[S.-R. F.]}]
-We have
-\ba
-\mathrm{d}^\Xi \mathrm{d}^\nabla \zeta
-&=
-0.
-\ea
-\end{theorem}
-\pause
-\begin{definition}[Obstruction class, {[S.-R. F.]}]
-We define the \textbf{obstruction class} by
-\ba
-\mathrm{Obs}(\Xi)
-&\coloneqq
-\mleft[ \mathrm{d}^\nabla \zeta \mright]_{\mathrm{d}^\Xi}.
-\ea
-\end{definition}
-\pause
-\begin{proposition}[{[S.-R. F.]}]
-\begin{itemize}[<+->]
-	\item An invariant of the field redefinitions.
-	\item If $\nabla$ flat, then $\mathrm{Obs}(\Xi) = 0$.
-\end{itemize}
-\end{proposition}
-\end{frame}
-}
-
-{
-\setbeamertemplate{footline}{}
-\begin{frame}
-\begin{theorem}[Obstruction for non-pre-classical theories, {[S.-R. F.]}]
-If $\mathrm{Obs}(\Xi) \neq 0$, then there is no field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
-\end{theorem}
-\pause
-\begin{theorem}[Locally always pre-classical]
-If $N$ is contractible, then there is a field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
-\end{theorem}
-\pause
-\begin{remark}
-Second theorem follows as a result by K.~Mackenzie (General Theory of Lie Groupoids and Algebroids. \textit{London Mathematical Society Lecture Note Series}, 213, 2005). Mackenzie derived $\mathrm{Obs}(\Xi)$ in the context of extending Lie algebroids by LABs.
-\end{remark}
-\end{frame}
-}
-
-\renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
-
-\begin{frame}
-\begin{example}[Zero obstruction class not necessarily pre-classical]
-Let $P$ be the Hopf fibration
-\begin{center}
-	\begin{tikzcd}[ampersand replacement=\&, column sep=small]
-		\mathrm{SU}(2) \arrow{r}	\& \mathds{S}^7 \arrow{d} \\
-			\& \mathds{S}^4
-	\end{tikzcd}
-\end{center}
-Then for the adjoint bundle
-\bas
-{\mathcal{g}}
-&\coloneqq
-P \times_{\mathrm{SU}(2)} \mathfrak{su}(2)
-\coloneqq 
-\mleft( \mathds{S}^7 \times \mathfrak{su}(2) \mright) \Big/ \mathrm{SU}(2)
-\eas
-we have a non-flat $\nabla$ satisfying the compatibility conditions such that all of its field redefinitions are not flat either, but $\mathrm{Obs}(\Xi) = 0$.
-\end{example}
-\end{frame}
-
-{
-\setbeamertemplate{footline}{}
-\begin{frame}{Summary}
-\begin{remark}
-Locally, LABs are always pre-classical but not necessarily classical. 
-
-In general, $\mathrm{Obs}(\Xi)=0$ does not imply a flat connection.
-\end{remark}
-\pause
-
-So, what actually happens in the adjoint bundle of $\mathds{S}^7 \to \mathds{S}^4$? 
-
-$\rightsquigarrow$ Integration
-\end{frame}
-}
-
-\section[Integrated cYM]{Integrated Version}
 
 \subsection{Principal bundles based on Lie group bundle actions}
 {
@@ -1445,6 +1244,217 @@ This principal $c_{\mathrm{SU}(2)}(P)$-bundle admits the structure as curved Yan
 \end{frame}
 
 }
+
+\begin{frame}
+\begin{definition}[Field redefinition, {[S.-R. F.]}]
+Let $\lambda \in \Omega^1(N; E)$ such that $\Lambda \coloneqq \mathds{1}_E - \lambda \circ \rho$ is an automorphism of $E$. We then define the \textbf{field redefinitions} by 
+\ba\label{EqFieldRedefFuerA}
+\widetilde{A}^\lambda
+&\coloneqq 
+\mleft( \Phi^* \Lambda \mright) (A)+ \Phi^! \lambda,
+\\
+\widetilde{\nabla}^\lambda
+&\coloneqq
+\nabla
+	+ \mleft( \Lambda \circ \mathrm{d}^{\nabla^{\mathrm{bas}}} \circ \Lambda^{-1} \mright) \lambda,
+\label{FieldTrafoOfNabla} \\
+\widetilde{\kappa}^\lambda
+&\coloneqq
+\kappa \circ \mleft( \Lambda^{-1}, \Lambda^{-1} \mright),
+\label{FieldTrafoOfKappa} \\
+\widetilde{g}^\lambda
+&\coloneqq
+g \circ \mleft( \widehat{\Lambda}^{-1}, \widehat{\Lambda}^{-1} \mright), \label{FieldTrafoOfG}
+\ea
+where $\widehat{\Lambda} \coloneqq \mathds{1}_{\mathrm{T}N} - \rho \circ \lambda$, and for all $X, Y \in \mathfrak{X}(N)$ we also define
+\ba
+&\widetilde{\zeta}^\lambda\mleft(\widehat{\Lambda}(X),\widehat{\Lambda}(Y)\mright)
+\nonumber \\
+&\coloneqq
+\Lambda\bigl(
+	\zeta\mleft( X, Y \mright)
+\bigr)
+	- \mleft(\mathrm{d}^{\widetilde{\nabla}^\lambda} \lambda\mright)(X,Y)
+	+ t_{\widetilde{\nabla}^\lambda_\rho}(\lambda(X), \lambda(Y)).
+\ea
+\end{definition}
+\end{frame}
+
+\begin{frame}
+\begin{proposition}[{[S.-R. F.]}]
+\begin{itemize}
+	\item Field redefinitions define an equivalence relation of CYMH gauge theories
+	\item $\widetilde{\mathfrak{L}}^\lambda_{\mathrm{CYMH}} = \mathfrak{L}_{\mathrm{CYMH}}$
+\end{itemize}
+\end{proposition}
+%\vfill
+\pause
+Let us now apply a field redefinition in order to study whether $\nabla$ and $\zeta$ can become flat and zero, respectively.
+\end{frame}
+}
+
+\subsection{Classification}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}{What happens in the case of Lie algebra bundles?}
+\begin{example}[Lie algebra bundles (LABs)]
+\begin{itemize}[<+->]
+	\item $E = \mathcal{g}$ an LAB ($\rho \equiv 0$) with a field of Lie brackets $\mleft[ \cdot, \cdot \mright]_{\mathcal{g}} \in \Gamma\mleft( \bigwedge^2{\mathcal{g}}^* \otimes {\mathcal{g}} \mright)$ which restricts to the bracket of a given Lie algebra $\mathfrak{g}$
+\end{itemize}
+\pause
+Compatibilities:
+\begin{itemize}[<+->]
+	\item $\kappa$ needs to be $\mathrm{ad}$-invariant
+	\item We need
+\ba
+\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
+&=
+\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
+	+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
+R_\nabla(Y, Z) \mu
+&=
+\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}
+\ea
+for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$.
+\end{itemize}
+\end{example}
+\end{frame}
+\begin{frame}
+\begin{theorem}[Invariant for LABs, {[S.-R. F.]}]
+We have
+\ba	
+\mathrm{d}^{\widetilde{\nabla}^\lambda} \widetilde{\zeta}^\lambda = \mathrm{d}^\nabla \zeta,
+\ea
+and $\mathrm{d}^\nabla \zeta$ has values in the centre of ${\mathcal{g}}$.
+\end{theorem}
+\end{frame}
+
+\begin{frame}{Behaviour of the field redefinition of $\zeta$}
+\begin{theorem}[Existence of non-classical theories, {[S.-R. F.]}]
+If $\mathrm{d}^\nabla \zeta \neq 0$, then there is no field redefinition such that $\widetilde{\zeta}^\lambda = 0$.
+\end{theorem}
+\pause
+\begin{remark}
+Starting with a classical theory:
+
+If $\mathrm{dim}(N) \geq 3$ and if Lie algebra $\mathfrak{g}$ has a non-zero centre, then we can always construct a pre-classical CYMH GT which is not a classical one by adding a $\zeta$ with $\mathrm{d}^\nabla \zeta \neq 0$.
+\end{remark}
+\pause
+However, by $R_\nabla = \mathrm{ad}_{\mathcal{g}} \circ \zeta$ it may still be that $\nabla$ becomes flat.
+\end{frame}
+
+\begin{frame}{Turning to the field redefinition of $\nabla$:}
+\begin{theorem}[Differential on centre-valued forms, {[S.-R. F.]}]
+$\nabla$ restricts to the centre of ${\mathcal{g}}$ and induces a differential $\mathrm{d}^\Xi$ on centre-valued forms. Moreover, $\mathrm{d}^\Xi$ is independent of the field redefinitions.
+\end{theorem}
+\pause
+\begin{proof}[Sketch of proof]
+Recall
+\bas
+\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
+&=
+\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
+	+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
+R_\nabla(Y, Z) \mu
+&=
+\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}, \\
+\widetilde{\nabla}^\lambda_Y \mu
+&=
+\nabla_Y \mu
+- \mleft[\lambda(Y), \mu\mright]_{\mathcal{g}},
+\eas
+for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$. Then insert $\mu$ with values in the centre.
+\end{proof}
+\end{frame}
+
+\begin{frame}
+\begin{theorem}[Closedness of $\mathrm{d}^\nabla \zeta$, {[S.-R. F.]}]
+We have
+\ba
+\mathrm{d}^\Xi \mathrm{d}^\nabla \zeta
+&=
+0.
+\ea
+\end{theorem}
+\pause
+\begin{definition}[Obstruction class, {[S.-R. F.]}]
+We define the \textbf{obstruction class} by
+\ba
+\mathrm{Obs}(\Xi)
+&\coloneqq
+\mleft[ \mathrm{d}^\nabla \zeta \mright]_{\mathrm{d}^\Xi}.
+\ea
+\end{definition}
+\pause
+\begin{proposition}[{[S.-R. F.]}]
+\begin{itemize}[<+->]
+	\item An invariant of the field redefinitions.
+	\item If $\nabla$ flat, then $\mathrm{Obs}(\Xi) = 0$.
+\end{itemize}
+\end{proposition}
+\end{frame}
+}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}
+\begin{theorem}[Obstruction for non-pre-classical theories, {[S.-R. F.]}]
+If $\mathrm{Obs}(\Xi) \neq 0$, then there is no field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
+\end{theorem}
+\pause
+\begin{theorem}[Locally always pre-classical]
+If $N$ is contractible, then there is a field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
+\end{theorem}
+\pause
+\begin{remark}
+Second theorem follows as a result by K.~Mackenzie (General Theory of Lie Groupoids and Algebroids. \textit{London Mathematical Society Lecture Note Series}, 213, 2005). Mackenzie derived $\mathrm{Obs}(\Xi)$ in the context of extending Lie algebroids by LABs.
+\end{remark}
+\end{frame}
+}
+
+\renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
+
+\begin{frame}
+\begin{example}[Zero obstruction class not necessarily pre-classical]
+Let $P$ be the Hopf fibration
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&, column sep=small]
+		\mathrm{SU}(2) \arrow{r}	\& \mathds{S}^7 \arrow{d} \\
+			\& \mathds{S}^4
+	\end{tikzcd}
+\end{center}
+Then for the adjoint bundle
+\bas
+{\mathcal{g}}
+&\coloneqq
+P \times_{\mathrm{SU}(2)} \mathfrak{su}(2)
+\coloneqq 
+\mleft( \mathds{S}^7 \times \mathfrak{su}(2) \mright) \Big/ \mathrm{SU}(2)
+\eas
+we have a non-flat $\nabla$ satisfying the compatibility conditions such that all of its field redefinitions are not flat either, but $\mathrm{Obs}(\Xi) = 0$.
+\end{example}
+\end{frame}
+
+{
+\setbeamertemplate{footline}{}
+\begin{frame}{Summary}
+\begin{remark}
+Locally, LABs are always pre-classical but not necessarily classical. 
+
+In general, $\mathrm{Obs}(\Xi)=0$ does not imply a flat connection.
+\end{remark}
+\pause
+
+So, what actually happens in the adjoint bundle of $\mathds{S}^7 \to \mathds{S}^4$? 
+
+$\rightsquigarrow$ Integration
+\end{frame}
+}
+
+\section[Classification]{An attempt of classification}
+
+
 
 
 %\section{Singular Foliations}
