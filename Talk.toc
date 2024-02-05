@@ -1,16 +1,15 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Curved Yang-Mills gauge theory}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Field Redefinition}{7}{0}{1}
-\beamer@subsectionintoc {1}{2}{Connections as parallel transport}{15}{0}{1}
-\beamer@subsectionintoc {1}{3}{General notion of Ehresmann and Yang-Mills connections}{22}{0}{1}
-\beamer@subsectionintoc {1}{4}{Field strength}{28}{0}{1}
-\beamer@subsectionintoc {1}{5}{Curved Yang-Mills gauge theory}{29}{0}{1}
-\beamer@subsectionintoc {1}{6}{Classical theory}{30}{0}{1}
-\beamer@subsectionintoc {1}{7}{Example}{31}{0}{1}
-\beamer@sectionintoc {2}{An attempt of classification}{32}{0}{2}
-\beamer@sectionintoc {3}{Applications: Singular foliations \\(joint work w/ Camille Laurent-Gengoux)}{53}{0}{3}
-\beamer@subsectionintoc {3}{1}{Definition}{56}{0}{3}
-\beamer@subsectionintoc {3}{2}{Idea: Relation to gauge theory}{61}{0}{3}
-\beamer@subsectionintoc {3}{3}{Reconstructing Foliations}{66}{0}{3}
-\beamer@subsectionintoc {3}{4}{Independency of choice of connection}{74}{0}{3}
-\beamer@sectionintoc {4}{Future Prospects}{78}{0}{4}
+\beamer@subsectionintoc {1}{2}{Connections as parallel transport}{16}{0}{1}
+\beamer@subsectionintoc {1}{3}{General notion of Ehresmann and Yang-Mills connections}{23}{0}{1}
+\beamer@subsectionintoc {1}{4}{Field strength}{29}{0}{1}
+\beamer@subsectionintoc {1}{5}{Curved Yang-Mills gauge theory}{30}{0}{1}
+\beamer@subsectionintoc {1}{6}{Classical theory}{31}{0}{1}
+\beamer@subsectionintoc {1}{7}{Example}{32}{0}{1}
+\beamer@sectionintoc {2}{Applications: Singular foliations \\(joint work w/ Camille Laurent-Gengoux)}{33}{0}{2}
+\beamer@subsectionintoc {2}{1}{Definition}{36}{0}{2}
+\beamer@subsectionintoc {2}{2}{Idea: Relation to gauge theory}{41}{0}{2}
+\beamer@subsectionintoc {2}{3}{Reconstructing Foliations}{46}{0}{2}
+\beamer@subsectionintoc {2}{4}{Independency of choice of connection}{54}{0}{2}
+\beamer@sectionintoc {3}{Future Prospects}{58}{0}{3}

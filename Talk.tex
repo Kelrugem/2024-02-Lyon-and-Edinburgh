@@ -189,14 +189,33 @@ National Center for Theoretical Sciences (National Taiwan University)
 \section[cYM]{Curved Yang-Mills gauge theory}
 
 {
-\setbeamertemplate{footline}{}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}
+		Sources
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+		Sombrero hat potential made by Mark J.D.\ Hamilton.
+  \end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %%\insertframenumber{} 
+		%%/ \inserttotalframenumber\hspace*{2ex} 
+  %\end{beamercolorbox}
+	}%
+  \vskip0pt%
+}
 \begin{frame}{\textbf{Infinitesimal} curved Yang-Mills-Higgs gauge theory}
 \centering
 \begin{tikzpicture}
 \filldraw [fill=gray!10!white, draw=black] plot [smooth cycle] coordinates {(5,0.25) (6,0.35) (6.5, 0.2) (7,0.5) (7,1.65) (6.5,2.75) (5.8,2.75) (5.3,1.45) (4.8,0.85) } node at (6.2,1.7) {$(N, g)$} node at (6.2, 3.2) {Riemannian manifold};
 \path[->] (2.6,1.7) edge [bend left] node[above] {Higgs field} node[below] {$\Psi$} (5.0,1.7);
 
-\filldraw [fill=gray!10!white, draw=black] (-0.2,.5) to[bend left] (1.3,2.85) to[bend left] (2.7,2) to[bend right] (1.8,.5) to[bend right] cycle node at (1.2,1.7) {$(M, \eta)$} node at (1.2, 3.2) {Spacetime};
+\filldraw [fill=gray!10!white, draw=black] (-0.2,.5) to[bend left] (1.3,2.85) to[bend left] (2.7,2) to[bend right] (1.8,.5) to[bend right] cycle node at (1.2,1.7) {$(L, \eta)$} node at (1.2, 3.2) {Spacetime};
 \path[->] (0.7,0.5) edge [bend right] node[left] {$A \in \Omega^1$} node[right] {Gauge bosons} (0.7, -1.5);
 \filldraw [fill=gray, draw=black] (5.2, .7) circle (0.2);
 \path[->] (2.5,-1.5) edge [bend right] node[right] {action $\gamma$} (5.2, .7);
@@ -241,12 +260,12 @@ National Center for Theoretical Sciences (National Taiwan University)
 		\begin{tabularx}{\textwidth}{X X}
 			\rowcolor{gray}
 			Classical formalism & CYMH GT \\
-			Lie algebra $\mathfrak{g}$ as $M \times \mathfrak{g}$ & Lie algebroid $E \to N$ \\
+			Lie algebra $\mathfrak{g}$ as $L \times \mathfrak{g}$ & Lie algebroid $E \to N$ \\
 			\rowcolor{Gray}
 			$\mathfrak{g}$-action $\gamma$ & Anchor $\rho$ of $E$ \\ 
 			\rowcolor{Gray}
 			& \& $E$-connections \\
-			Canonical flat connection $\nabla^0$ on $M \times \mathfrak{g}$ & General connection $\nabla$ on $E$
+			Canonical flat connection $\nabla^0$ on $L \times \mathfrak{g}$ & General connection $\nabla$ on $E$
 		\end{tabularx}
 \end{table}
 \pause
@@ -274,7 +293,7 @@ $\rightsquigarrow$ We will use a general connection $\nabla$ instead of $\nabla^
 \setbeamertemplate{footline}{}
 
 \begin{frame}
-Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
@@ -284,7 +303,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
 	\mathup{At}(P)
 	\arrow[two heads]{r}
 	\&
-	\mathrm{T}M
+	\mathrm{T}L
 	\end{tikzcd}
 \end{center}
  
@@ -304,7 +323,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
 \end{frame}
 
 \begin{frame}
-Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
@@ -314,7 +333,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
 	\mathup{At}(P)
 	\arrow[two heads]{r}
 	\&
-	\mathrm{T}M
+	\mathrm{T}L
 	\end{tikzcd}
 \end{center}
  
@@ -335,7 +354,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
 \end{frame}
 
 \begin{frame}
-Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
@@ -345,7 +364,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to M$:
 	\mathup{At}(P)
 	\arrow[two heads]{r}
 	\&
-	\mathrm{T}M
+	\mathrm{T}L
 	\end{tikzcd}
 \end{center}
  
@@ -384,53 +403,75 @@ But: In the {\color[rgb]{0.24,0.7,0.44} curved} sense! Curvature terms appear.
 
 \end{frame}
 
+\begin{frame}
+\textbf{We will only focus on Yang-Mills theories:}
+
+\begin{table}[h!]
+		\begin{tabularx}{\textwidth}{X| c c} 
+			\rowcolor{gray}
+			& Classical & Curved \\ \hline
+			Infinitesimal & Lie algebra $\mathfrak{g}$ & LAB\footnote{LAB = Lie algebra bundle} $\mathcal{g}$ \\
+			\rowcolor{Gray}
+			Integrated & Lie group $G$ & \textcolor[rgb]{1,0.41,0.13}{LGB\footnote{LGB = Lie group bundle} $\mathcal{G}$} \\
+		\end{tabularx}
+\end{table}
+
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	G \arrow{r} \& \mathcal{G} \arrow{d} \\
+	\& M
+	\end{tikzcd}
+\end{center}
+
+\end{frame}
+
 }
 
 \renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
 
 \begin{frame}
-\begin{definition}[LGB actions]
+\begin{definition}[LGB actions, simplified]
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&, column sep = small, row sep = small]
-	 \& \mathcal{G} \arrow[bend right]{dl} \arrow{d}{\pi_{\mathcal{G}}} \\
-	\mathcal{T} \arrow{r}{\phi} \& L
+	\& \mathcal{G} \arrow{d} \\
+	\mathcal{P} \arrow{r}{\pi} \& L
 	\end{tikzcd}
 \end{center}
-A \textbf{right-action of $\mathcal{G}$ on $\mathcal{T}$} is a smooth map 
+$\mathcal{P} \stackrel{\pi}{\to} L$ a fibre bundle. A \textbf{right-action of $\mathcal{G}$ on $\mathcal{P}$} is a smooth map 
 %\bas
-$\mathcal{T} * \mathcal{G} \coloneqq \mathcal{T} \leftindex^{}_{\phi}\times_{\pi_{\mathcal{G}}} \mathcal{G} \to \mathcal{T}$,
-$(t, g) \mapsto t \cdot g$,
+$\mathcal{P} * \mathcal{G} \coloneqq \pi^*\mathcal{G} = \mathcal{P} \times_L \mathcal{G} \to \mathcal{P}$,
+$(p, g) \mapsto p \cdot g$,
 %\eas
 satisfying the following properties:
 \ba\label{InvarianceOffUnderGAction}
-\phi(t \cdot g) &= \phi(t),\\
-(t \cdot g) \cdot h &= t \cdot (gh),\\
-t \cdot e_{\phi(t)} &= p
+\pi(p \cdot g) &= \pi(p),\\
+(p \cdot g) \cdot h &= p \cdot (gh),\\
+p \cdot e_{\pi(p)} &= p
 \ea
-for all $t \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\phi(t)}$, where $e_{\phi(t)}$ is the neutral element of $\mathcal{G}_{\phi(t)}$.
+for all $p \in \mathcal{P}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p)}$ is the neutral element of $\mathcal{G}_{\pi(p)}$.
 \end{definition}
 \end{frame}
+
 
 \renewcommand\insertreferences{{\tiny Ieke Moerdijk, Janez Mrcun. Introduction to Foliations and Lie Groupoids. \newline \textit{Cambridge Studies in Advanced Mathematics 91, Cambridge University Press, Cambridge}, 2003}}
 
 \begin{frame}
 \begin{definition}[Principal bundle]
+Still a fibre bundle
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathcal{P} \arrow{d}{\pi_{\mathcal{P}}} \arrow{dr}{\phi} \& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}}
-    %\arrow{l} G 
-    \\
-	L' \arrow{r}{\Psi} \& L
+	G \arrow{r} \& \mathcal{P} \arrow{d}{\pi} \\
+	\& L
 	\end{tikzcd}
 \end{center}
-A surjective submersion $\pi_{\mathcal{P}}\colon \mathcal{P} \to L'$, with $\mathcal{G}$-action
+but with $\mathcal{G}$-action
 \bas
 \begin{matrix}
 	\textcolor[rgb]{1,0,0}{\xcancel{\mathcal{P} \times G}} &\to \mathcal{P} \\
 	\mathcal{P} * \mathcal{G} &
 \end{matrix}
 \eas
-simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable" atlas.
+simply transitive on fibres of $\mathcal{P}$, and "suitable" atlas.
 \end{definition}
 \end{frame}
 
@@ -444,8 +485,6 @@ simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable"
 \centering
 \begin{tikzpicture}[scale=0.55]
 \draw (0,-3.5) to[out=10,in=170] (4.25,-3.5) to[out=350,in=190] (8.5,-3.5);
-\draw [->, draw=orange] (8.7,-3.5) -- (10.3,-3.5);
-\draw (9.5,-4) node {\textcolor[rgb]{1,0.647,0}{$\Psi \colon L' \to L$}};
 \draw (1.25,2.5) to[out=280,in=90](1.5,0) to[out=270,in=80] (1.25,-2.5);
 \filldraw [fill=gray!20!white, draw=white] (3.5,2.5) to[out=280,in=90](3.75,0) to[out=270,in=80] (3.5,-2.5) -- (5,-2.5)  to[out=80,in=270](5.25,0) to[out=90,in=280] (5,2.5) -- cycle;
 \draw (4.25,2.5) to[out=280,in=95](4.41,1) to[out=275,in=85] (4.41,-1) to[out=265,in=80] (4.25,-2.5); %draw with middle section for precise point placement
@@ -461,7 +500,7 @@ simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable"
 
 %\draw (4.75,2) node {$\mathcal{P}_x$};
 %\draw (4.95,1.5) node {$\cong G$};
-%\draw (9.5,-3.5) node {$M$};
+\draw (9.5,-3.5) node {$L$};
 \draw (5,2) node {$\mathcal{P}_U$};
 \draw (3.5,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
@@ -470,7 +509,7 @@ simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable"
 \draw (4.25, -3) node {$U$};
 \draw (0,0) node {$\mathcal{P}$};
 \draw [->] (0,-0.4) -- (0,-3.1);
-\draw (0.6,-1.75) node {$\pi_{\mathcal{P}}$};
+\draw (0.4,-1.75) node {$\pi$};
 \draw (3.5,1) node {\textcolor[rgb]{1,0,0}{$p \cdot g$}};
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \draw (10.5,-3.5) to[out=10,in=170] (14.75,-3.5) to[out=350,in=190] (19,-3.5); %hori M
@@ -486,14 +525,14 @@ simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable"
 
 \draw (19,0) node {$\mathcal{G}$}; %These three lines are for LGB projection
 \draw [->] (19,-0.4) -- (19,-3.1);
-\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
+%\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
 
 \draw (15.5,2) node {$\mathcal{G}_U$};
 \draw (14,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
-\draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$\Psi(x)$}};
+\draw (14.75,-3.9) node {\textcolor[rgb]{1,0,0}{$x$}};
 \draw (15.5,-3.6) node {$)$};
-\draw (14.75, -2.9) node {$\Psi(U)$};
+\draw (14.75, -3) node {$U$};
 
 \path[<-] (8.5,0) edge [bend left] (11,0);
 \end{tikzpicture}
@@ -501,7 +540,7 @@ simply transitive on $\pi_{\mathcal{P}}$-fibres of $\mathcal{P}$, and "suitable"
 \pause
 But:
 \bas
-&&&r_g \colon \mathcal{P}_x \to \mathcal{P}_x\\
+&&&r_g: \mathcal{P}_x \to \mathcal{P}_x\\
 &\Rightarrow&&\mathrm{D}_pr_g \text{ only defined on vertical structure}
 \eas
 \end{frame}
@@ -513,8 +552,6 @@ But:
 \centering
 \begin{tikzpicture}[scale=0.55]
 \draw (0,-3.5) to[out=10,in=170] (4.25,-3.5) to[out=350,in=190] (8.5,-3.5);
-\draw [->, draw=orange] (8.7,-3.5) -- (10.3,-3.5);
-\draw (9.5,-4) node {\textcolor[rgb]{1,0.647,0}{$\Psi \colon L' \to L$}};
 \draw (1.25,2.5) to[out=280,in=90](1.5,0) to[out=270,in=80] (1.25,-2.5);
 \filldraw [fill=gray!20!white, draw=white] (3.5,2.5) to[out=280,in=90](3.75,0) to[out=270,in=80] (3.5,-2.5) -- (5,-2.5)  to[out=80,in=270](5.25,0) to[out=90,in=280] (5,2.5) -- cycle;
 \draw (4.25,2.5) to[out=280,in=95](4.41,1) to[out=275,in=85] (4.41,-1) to[out=265,in=80] (4.25,-2.5); %draw with middle section for precise point placement
@@ -532,7 +569,7 @@ But:
 
 %\draw (4.75,2) node {$\mathcal{P}_x$};
 %\draw (4.95,1.5) node {$\cong G$};
-%\draw (9.5,-3.5) node {$M$};
+\draw (9.5,-3.5) node {$L$};
 \draw (5,2) node {$\mathcal{P}_U$};
 \draw (3.5,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
@@ -541,8 +578,8 @@ But:
 \draw (4.25, -3) node {$U$};
 \draw (0,0) node {$\mathcal{P}$};
 \draw [->] (0,-0.4) -- (0,-3.1);
-\draw (0.6,-1.75) node {$\pi_{\mathcal{P}}$};
-\draw (3.5,1) node {\textcolor[rgb]{1,0,0}{$r_\sigma(p)$}};
+\draw (0.4,-1.75) node {$\pi$};
+\draw (3.5,1) node {\textcolor[rgb]{1,0,0}{$p \cdot \sigma_x$}};
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \draw (10.5,-3.5) to[out=10,in=170] (14.75,-3.5) to[out=350,in=190] (19,-3.5); %hori M
 \filldraw [fill=gray!20!white, draw=white] (14,2.5) to[out=280,in=90](14.25,0) to[out=270,in=80] (14,-2.5) -- (15.5,-2.5)  to[out=80,in=270](15.75,0) to[out=90,in=280] (15.5,2.5) -- cycle; %gray area
@@ -558,21 +595,21 @@ But:
 
 \draw (19,0) node {$\mathcal{G}$}; %These three lines are for LGB projection
 \draw [->] (19,-0.4) -- (19,-3.1);
-\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
+%\draw (18.5,-1.75) node {$\pi_{\mathcal{G}}$};
 
 \draw (15.5,2) node {$\mathcal{G}_U$};
 \draw (14,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
-\draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$\Psi(x)$}};
+\draw (14.75,-3.9) node {\textcolor[rgb]{1,0,0}{$x$}};
 \draw (15.5,-3.6) node {$)$};
-\draw (14.75, -2.9) node {$\Psi(U)$};
+\draw (14.75, -3) node {$U$};
 
 \path[<-] (8.5,0) edge [bend left] (11,0);
 \end{tikzpicture}
 \end{figure}
 
 \bas
-\text{Use } \sigma \in \Gamma(\mathcal{G})\colon r_\sigma(p) \coloneqq p \cdot \sigma_{\Psi(x)}
+\text{Use } \sigma \in \Gamma(\mathcal{G}): r_\sigma(p) \coloneqq p \cdot \sigma_{x}
 \eas
 \end{frame}
 
@@ -624,7 +661,7 @@ But:
 		%&=
 		%\mathup{PT}^{\mathcal{P}}_\alpha(p) \cdot \mathup{PT}^{\mathcal{G}}_\alpha (g)
 		\eas
-		where $\gamma:I \to L'$ is a base path 
+		where $\gamma:I \to L$ is a base path 
 	\end{remark}
 	\end{minipage}
 \end{frame}
@@ -638,7 +675,7 @@ But:
 		\bas
 		\mathup{PT}^{\mathcal{P}}_\gamma(p \cdot g)
 		&=
-		\mathup{PT}^{\mathcal{P}}_\gamma(p) \cdot \mathup{PT}^{\mathcal{G}}_{\Psi \circ \gamma} (g).
+		\mathup{PT}^{\mathcal{P}}_\gamma(p) \cdot \mathup{PT}^{\mathcal{G}}_{\gamma} (g).
 		\eas
 	\end{remark}
 	\pause
@@ -652,23 +689,23 @@ But:
 \subsection{General notion of Ehresmann and Yang-Mills connections}
 \begin{frame}
 \begin{definition}[Ehresmann/Yang-Mills connection, {[C.\ L.-G., S.-R.\ F.]}]
-A surjective submersion $\pi_{\mathcal{T}} \colon \mathcal{T} \to L'$ so that one has a commuting diagram
+A surjective submersion $\pi_{\mathcal{T}} \colon \mathcal{T} \to L$ so that one has a commuting diagram
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathcal{T} \arrow[swap]{d}{\pi_{\mathcal{T}}} \arrow{dr}{\phi} \& \arrow[bend right]{l} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}}
+	\& \arrow[bend right]{ld} \mathcal{G} \arrow{d}{\pi_{\mathcal{G}}}
     %\arrow{l} G 
     \\
-	L' \arrow{r}{\Psi} \& L
+	\mathcal{T} \arrow{r}{\pi_{\mathcal{T}}} \& L
 	\end{tikzcd}
 \end{center}
 \begin{enumerate}
-	\item \textbf{Ehresmann connection:} $\mathcal{G}$ preserving $\pi_{\mathcal{T}}$ and
+	\item \textbf{Ehresmann connection:} 
 	\bas
 	\mathup{PT}_\gamma^{\mathcal{T}}(t \cdot g)
 	&=
 	\mathup{PT}_\gamma^{\mathcal{T}}(t)
 	\cdot
-	\mathup{PT}_{\Psi\circ\gamma}^{\mathcal{G}}(g)
+	\mathup{PT}_{\gamma}^{\mathcal{G}}(g)
 	\eas
 	\item \textbf{Yang-Mills connection:} Additionally
 	\bas
@@ -676,7 +713,7 @@ A surjective submersion $\pi_{\mathcal{T}} \colon \mathcal{T} \to L'$ so that on
 	&=
 	t \cdot g_{\gamma_0}
 	\eas
-	for some $g_{\gamma_0} \in \mathcal{G}_{\phi(t)}$, where $\gamma_0$ is a contractible loop.
+	for some $g_{\gamma_0} \in \mathcal{G}_{\pi_{\mathcal{T}}(t)}$, where $\gamma_0$ is a contractible loop.
 \end{enumerate}
 \end{definition}
 \end{frame}
@@ -735,16 +772,16 @@ such that the definition of the multiplicative Yang-Mills connection is equivale
 
 \begin{frame}
 \begin{remark}
-On the Lie algebra bundle $\mathcal{g}$ we have a connection $\nabla^{\mathcal{G}}$ with 
+On the Lie algebra bundle $\mathcal{g}$ we have a connection $\nabla$ with 
 \bas
-\nabla^{\mathcal{G}}\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
+\nabla\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
 &=
-\mleft[ \nabla^{\mathcal{G}} \mu, \nu \mright]_{\mathcal{g}}
-	+ \mleft[ \mu, \nabla^{\mathcal{G}} \nu \mright]_{\mathcal{g}},
+\mleft[ \nabla \mu, \nu \mright]_{\mathcal{g}}
+	+ \mleft[ \mu, \nabla \nu \mright]_{\mathcal{g}},
 \\
-R_{\nabla^{\mathcal{G}}}
+R_{\nabla}
 &=
-\mathrm{ad} \circ \zeta. \qquad \text{ ([S.-R.\ F.])}
+\mathrm{ad} \circ \zeta.
 \eas
 \end{remark}
 \pause
@@ -759,7 +796,7 @@ Given a short exact sequence of algebroids
 \end{center}
 with splitting $\chi \colon \mathrm{T}L \to E$, then
 \bas
-\nabla^{\mathcal{G}}_X \nu
+\nabla_X \nu
 &=
 \mleft[ \chi(X), \nu \mright]_E,
 \\
@@ -858,201 +895,197 @@ This principal $c_{\mathrm{SU}(2)}(P)$-bundle admits the structure as curved Yan
 }
 
 
-\section[Classification]{An attempt of classification}
-
-
-{
-\setbeamertemplate{footline}{}
-\begin{frame}
-\begin{definition}[Field redefinition, {[S.-R. F.]}]
-Let $\lambda \in \Omega^1(L; \mathcal{g})$, then we define the \textbf{field redefinitions} by 
-\bas\label{EqFieldRedefFuerA}
-\widetilde{A}^\lambda
-&\coloneqq 
-A - \pi_{\mathcal{P}}^! \lambda,
-\\
-\widetilde{\nabla}^\lambda
-&\coloneqq
-\nabla
-	+ \mathrm{ad} \circ \lambda,
-\\
-\widetilde{\zeta}^\lambda
-&\coloneqq
-\zeta
-	+ \mathrm{d}^{\widetilde{\nabla}^\lambda} \lambda
-	+ \frac12 \mleft[ \lambda \stackrel{\wedge}{,} \lambda \mright]_{\mathcal{g}},
-\eas
-where $A \in \Omega^1(\mathcal{P}; \pi_{\mathcal{P}}^*\mathcal{g})$ is the connection 1-form on $\mathcal{P}$.
-%for all $X, Y \in \mathfrak{X}(L)$.
-\end{definition}
-\end{frame}
-
-\begin{frame}
-\begin{proposition}[{[S.-R. F.]}]
-\begin{itemize}
-	\item Field redefinitions define an equivalence relation of CYMH gauge theories
-	\item $\widetilde{\mathfrak{L}}^\lambda_{\mathrm{CYMH}} = \mathfrak{L}_{\mathrm{CYMH}}$
-\end{itemize}
-\end{proposition}
-%\vfill
-\pause
-Let us now apply a field redefinition in order to study whether $\nabla$ and $\zeta$ can become flat and zero, respectively.
-\end{frame}
-}
-
-%\subsection{Classification}
-
-{
-\setbeamertemplate{footline}{}
-\begin{frame}
-\begin{theorem}[Invariant for LABs, {[S.-R. F.]}]
-We have
-\bas
-\mathrm{d}^{\widetilde{\nabla}^\lambda} \widetilde{\zeta}^\lambda = \mathrm{d}^\nabla \zeta,
-\eas
-and $\mathrm{d}^\nabla \zeta$ has values in the centre of ${\mathcal{g}}$.
-\end{theorem}
-
-\begin{proof}
-Bianchi identity given by $\mathrm{d}^\nabla \zeta$.
-
-Compatibilities:
-\begin{itemize}[<+->]
-	\item $\kappa$ needs to be $\mathrm{ad}$-invariant
-	\item We need
-\bas
-\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
-&=
-\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
-	+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
-R_\nabla(Y, Z) \mu
-&=
-\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}
-\eas
-for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$.
-\end{itemize}
-\end{proof}
-\end{frame}
-
-\begin{frame}{Behaviour of the field redefinition of $\zeta$}
-\begin{theorem}[Existence of non-classical theories, {[S.-R. F.]}]
-If $\mathrm{d}^\nabla \zeta \neq 0$, then there is no field redefinition such that $\widetilde{\zeta}^\lambda = 0$.
-\end{theorem}
-\pause
-\begin{remark}
-Starting with a classical theory:
-
-If $\mathrm{dim}(N) \geq 3$ and if Lie algebra $\mathfrak{g}$ has a non-zero centre, then we can always construct a pre-classical CYMH GT which is not a classical one by adding a $\zeta$ with $\mathrm{d}^\nabla \zeta \neq 0$.
-\end{remark}
-\pause
-However, by $R_\nabla = \mathrm{ad}_{\mathcal{g}} \circ \zeta$ it may still be that $\nabla$ becomes flat.
-\end{frame}
-
-\begin{frame}{Turning to the field redefinition of $\nabla$:}
-\begin{theorem}[Differential on centre-valued forms, {[S.-R. F.]}]
-$\nabla$ restricts to the centre of ${\mathcal{g}}$ and induces a differential $\mathrm{d}^\Xi$ on centre-valued forms. Moreover, $\mathrm{d}^\Xi$ is independent of the field redefinitions.
-\end{theorem}
-\pause
-\begin{proof}[Sketch of proof]
-Recall
-\bas
-\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
-&=
-\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
-	+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
-R_\nabla(Y, Z) \mu
-&=
-\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}, \\
-\widetilde{\nabla}^\lambda_Y \mu
-&=
-\nabla_Y \mu
-- \mleft[\lambda(Y), \mu\mright]_{\mathcal{g}},
-\eas
-for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$. Then insert $\mu$ with values in the centre.
-\end{proof}
-\end{frame}
-
-\begin{frame}
-\begin{theorem}[Closedness of $\mathrm{d}^\nabla \zeta$, {[S.-R. F.]}]
-We have
-\bas
-\mathrm{d}^\Xi \mathrm{d}^\nabla \zeta
-&=
-0.
-\eas
-\end{theorem}
-\pause
-\begin{definition}[Obstruction class, {[S.-R. F.]}]
-We define the \textbf{obstruction class} by
-\bas
-\mathrm{Obs}(\Xi)
-&\coloneqq
-\mleft[ \mathrm{d}^\nabla \zeta \mright]_{\mathrm{d}^\Xi}.
-\eas
-\end{definition}
-\pause
-\begin{proposition}[{[S.-R. F.]}]
-\begin{itemize}[<+->]
-	\item An invariant of the field redefinitions.
-	\item If $\nabla$ flat, then $\mathrm{Obs}(\Xi) = 0$.
-\end{itemize}
-\end{proposition}
-\end{frame}
-
-\begin{frame}
-\begin{theorem}[Obstruction for non-pre-classical theories, {[S.-R. F.]}]
-If $\mathrm{Obs}(\Xi) \neq 0$, then there is no field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
-\end{theorem}
-\pause
-\begin{theorem}[Locally always pre-classical]
-If $L$ is contractible, then there is a field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
-\end{theorem}
-\pause
-\begin{remark}
-Second theorem follows as a result by K.~Mackenzie (General Theory of Lie Groupoids and Algebroids. \textit{London Mathematical Society Lecture Note Series}, 213, 2005). Mackenzie derived $\mathrm{Obs}(\Xi)$ in the context of extending Lie algebroids by LABs.
-\end{remark}
-\end{frame}
-}
-
-\renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
-
-\begin{frame}
-\begin{example}[Zero obstruction class not necessarily pre-classical]
-Let $P$ be the Hopf fibration
-\begin{center}
-	\begin{tikzcd}[ampersand replacement=\&, column sep=small]
-		\mathrm{SU}(2) \arrow{r}	\& \mathds{S}^7 \arrow{d} \\
-			\& \mathds{S}^4
-	\end{tikzcd}
-\end{center}
-Then for the adjoint bundle
-\bas
-{\mathcal{g}}
-&\coloneqq
-P \times_{\mathrm{SU}(2)} \mathfrak{su}(2)
-\coloneqq 
-\mleft( \mathds{S}^7 \times \mathfrak{su}(2) \mright) \Big/ \mathrm{SU}(2)
-\eas
-we have a non-flat $\nabla$ satisfying the compatibility conditions such that all of its field redefinitions are not flat either, but $\mathrm{Obs}(\Xi) = 0$.
-\end{example}
-\end{frame}
-
-{
-\setbeamertemplate{footline}{}
-\begin{frame}{Summary}
-\begin{remark}
-Locally, LABs are always pre-classical but not necessarily classical. 
-
-In general, $\mathrm{Obs}(\Xi)=0$ does not imply a flat connection.
-\end{remark}
-\pause
-
-So, what actually happens in the adjoint bundle of $\mathds{S}^7 \to \mathds{S}^4$? 
-
-$\rightsquigarrow$ Integration
-\end{frame}
-}
-
+%\section[Classification]{An attempt of classification}
+%
+%
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}
+%\begin{definition}[Field redefinition, {[S.-R. F.]}]
+%Let $\lambda \in \Omega^1(L; \mathcal{g})$, then we define the \textbf{field redefinitions} by 
+%\bas\label{EqFieldRedefFuerA}
+%\widetilde{A}^\lambda
+%&\coloneqq 
+%A - \pi_{\mathcal{P}}^! \lambda,
+%\\
+%\widetilde{\nabla}^\lambda
+%&\coloneqq
+%\nabla
+	%+ \mathrm{ad} \circ \lambda,
+%\\
+%\widetilde{\zeta}^\lambda
+%&\coloneqq
+%\zeta
+	%+ \mathrm{d}^{\widetilde{\nabla}^\lambda} \lambda
+	%+ \frac12 \mleft[ \lambda \stackrel{\wedge}{,} \lambda \mright]_{\mathcal{g}},
+%\eas
+%where $A \in \Omega^1(\mathcal{P}; \pi_{\mathcal{P}}^*\mathcal{g})$ is the connection 1-form on $\mathcal{P}$.
+%%for all $X, Y \in \mathfrak{X}(L)$.
+%\end{definition}
+%\end{frame}
+%
+%\begin{frame}
+%\begin{proposition}[{[S.-R. F.]}]
+%\begin{itemize}
+	%\item Field redefinitions define an equivalence relation of CYMH gauge theories
+	%\item $\widetilde{\mathfrak{L}}^\lambda_{\mathrm{CYMH}} = \mathfrak{L}_{\mathrm{CYMH}}$
+%\end{itemize}
+%\end{proposition}
+%%\vfill
+%\pause
+%Let us now apply a field redefinition in order to study whether $\nabla$ and $\zeta$ can become flat and zero, respectively.
+%\end{frame}
+%}
+%
+%%\subsection{Classification}
+%
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}
+%\begin{theorem}[Invariant for LABs, {[S.-R. F.]}]
+%We have
+%\bas
+%\mathrm{d}^{\widetilde{\nabla}^\lambda} \widetilde{\zeta}^\lambda = \mathrm{d}^\nabla \zeta,
+%\eas
+%and $\mathrm{d}^\nabla \zeta$ has values in the centre of ${\mathcal{g}}$.
+%\end{theorem}
+%
+%\begin{proof}
+%Bianchi identity given by $\mathrm{d}^\nabla \zeta$.
+%
+%Compatibilities: 
+%\bas
+%\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
+%&=
+%\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
+	%+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
+%R_\nabla(Y, Z) \mu
+%&=
+%\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}
+%\eas
+%for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$.
+%\end{proof}
+%\end{frame}
+%
+%\begin{frame}{Behaviour of the field redefinition of $\zeta$}
+%\begin{theorem}[Existence of non-classical theories, {[S.-R. F.]}]
+%If $\mathrm{d}^\nabla \zeta \neq 0$, then there is no field redefinition such that $\widetilde{\zeta}^\lambda = 0$.
+%\end{theorem}
+%\pause
+%\begin{remark}[{[S.-R. F.]}]
+%Starting with a classical theory:
+%
+%If $\mathrm{dim}(N) \geq 3$ and if Lie algebra $\mathfrak{g}$ has a non-zero centre, then we can always construct a pre-classical CYMH GT which is not a classical one by adding a $\zeta$ with $\mathrm{d}^\nabla \zeta \neq 0$.
+%\end{remark}
+%\pause
+%However, by $R_\nabla = \mathrm{ad}_{\mathcal{g}} \circ \zeta$ it may still be that $\nabla$ becomes flat.
+%\end{frame}
+%
+%\begin{frame}{Turning to the field redefinition of $\nabla$:}
+%\begin{theorem}[Differential on centre-valued forms, {[S.-R. F.]}]
+%$\nabla$ restricts to the centre of ${\mathcal{g}}$ and induces a differential $\mathrm{d}^\Xi$ on centre-valued forms. Moreover, $\mathrm{d}^\Xi$ is independent of the field redefinitions.
+%\end{theorem}
+%\pause
+%\begin{proof}[Sketch of proof]
+%Recall
+%\bas
+%\nabla_Y\mleft( \mleft[ \mu, \nu \mright]_{\mathcal{g}} \mright)
+%&=
+%\mleft[ \nabla_Y \mu, \nu \mright]_{\mathcal{g}}
+	%+ \mleft[ \mu, \nabla_Y \nu \mright]_{\mathcal{g}}, \\
+%R_\nabla(Y, Z) \mu
+%&=
+%\mleft[ \zeta(Y, Z), \mu \mright]_{\mathcal{g}}, \\
+%\widetilde{\nabla}^\lambda_Y \mu
+%&=
+%\nabla_Y \mu
+%- \mleft[\lambda(Y), \mu\mright]_{\mathcal{g}},
+%\eas
+%for all $Y, Z \in \mathfrak{X}(N)$ and $\mu, \nu \in \Gamma({\mathcal{g}})$. Then insert $\mu$ with values in the centre.
+%\end{proof}
+%\end{frame}
+%
+%\begin{frame}
+%\begin{theorem}[Closedness of $\mathrm{d}^\nabla \zeta$, {[S.-R. F.]}]
+%We have
+%\bas
+%\mathrm{d}^\Xi \mathrm{d}^\nabla \zeta
+%&=
+%0.
+%\eas
+%\end{theorem}
+%\pause
+%\begin{definition}[Obstruction class, {[S.-R. F.]}]
+%We define the \textbf{obstruction class} by
+%\bas
+%\mathrm{Obs}(\Xi)
+%&\coloneqq
+%\mleft[ \mathrm{d}^\nabla \zeta \mright]_{\mathrm{d}^\Xi}.
+%\eas
+%\end{definition}
+%\pause
+%\begin{proposition}[{[S.-R. F.]}]
+%\begin{itemize}[<+->]
+	%\item An invariant of the field redefinitions.
+	%\item If $\nabla$ flat, then $\mathrm{Obs}(\Xi) = 0$.
+%\end{itemize}
+%\end{proposition}
+%\end{frame}
+%
+%\begin{frame}
+%\begin{theorem}[Obstruction for non-pre-classical theories, {[S.-R. F.]}]
+%If $\mathrm{Obs}(\Xi) \neq 0$, then there is no field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
+%\end{theorem}
+%\pause
+%\begin{theorem}[Locally always pre-classical]
+%If $L$ is contractible, then there is a field redefinition such that $\widetilde{\nabla}^\lambda$ is flat.
+%\end{theorem}
+%\pause
+%\begin{remark}
+%Second theorem follows as a result by K.~Mackenzie (General Theory of Lie Groupoids and Algebroids. \textit{London Mathematical Society Lecture Note Series}, 213, 2005). Mackenzie derived $\mathrm{Obs}(\Xi)$ in the context of extending Lie algebroids by LABs.
+%\end{remark}
+%\end{frame}
+%}
+%
+%\renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
+%
+%\begin{frame}
+%\begin{example}[Zero obstruction class not necessarily pre-classical]
+%Let $P$ be the Hopf fibration
+%\begin{center}
+	%\begin{tikzcd}[ampersand replacement=\&, column sep=small]
+		%\mathrm{SU}(2) \arrow{r}	\& \mathds{S}^7 \arrow{d} \\
+			%\& \mathds{S}^4
+	%\end{tikzcd}
+%\end{center}
+%Then for the adjoint bundle
+%\bas
+%{\mathcal{g}}
+%&\coloneqq
+%P \times_{\mathrm{SU}(2)} \mathfrak{su}(2)
+%\coloneqq 
+%\mleft( \mathds{S}^7 \times \mathfrak{su}(2) \mright) \Big/ \mathrm{SU}(2)
+%\eas
+%we have a non-flat $\nabla$ satisfying the compatibility conditions such that all of its field redefinitions are not flat either, but $\mathrm{Obs}(\Xi) = 0$.
+%\end{example}
+%\end{frame}
+%
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}{Summary}
+%\begin{remark}
+%Locally, LABs are always pre-classical but not necessarily classical. 
+%
+%In general, $\mathrm{Obs}(\Xi)=0$ does not imply a flat connection.
+%\end{remark}
+%\pause
+%
+%So, what actually happens in the adjoint bundle of $\mathds{S}^7 \to \mathds{S}^4$? 
+%
+%$\rightsquigarrow$ Foliations
+%\end{frame}
+%}
+%
 
 
 
@@ -1303,9 +1336,9 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 \mleft[ \mathbb{H}(X) + \overline{\nu}, \mathbb{H}\mleft({X^\prime}\mright) + \overline{\mu} \mright]
 &=
 \mathbb{H}\mleft(\mleft[ X, X' \mright]\mright) + 
-%\overline{\vphantom{d}
+\overline{\vphantom{d}
 \dots
-%}
+}
 \\
 &=
 \underbrace{\mleft[ \mathbb{H}(X), \mathbb{H}\mleft({X^\prime}\mright) \mright]}_{\rightsquigarrow \text{ curvature}}
@@ -1425,7 +1458,7 @@ The reconstructed foliation is independent of the choice of connection on $P$.
 \begin{remark}[{[C.\ L.-G., S.-R.\ F.]}]
 In the simply connected case, the following are equivalent:
 \begin{itemize}
-	\item Singular foliations with leaf $L$ and transverse model $\tau_l$
+	\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
 	\item Principal $\mathrm{Inner}(\tau_l)$-bundles over $L$
 \end{itemize}
 \end{remark}
@@ -1446,8 +1479,8 @@ If $\mathcal{G}$ acts faithfully on $\mathcal{T}$, then a curved Yang-Mills gaug
 
 \begin{remark}[Future prospects]
 \begin{itemize}
-	\item Total space and Atiyah bundles of groupoid-based principal bundles
 	\item Further applications of curved gauge theories (existence of Cartan connections,...)
+	\item Total space and Atiyah bundles of groupoid-based principal bundles
 	\item Field redefinitions as natural symmetry in associated applications
 \end{itemize}
 \end{remark}
