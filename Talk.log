@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  5 FEB 2024 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  6 FEB 2024 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1605,7 +1605,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 178--178
 [][][][]  
  []
 
-<NCTS.png, id=124, 562.60187pt x 174.6525pt>
+<NCTS.png, id=120, 562.60187pt x 174.6525pt>
 File: NCTS.png Graphic file (type png)
 <use NCTS.png>
 Package pdftex.def Info: NCTS.png  used on input line 178.
@@ -1643,57 +1643,57 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 189--189
 [3
 
 ]
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 255.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 256.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 255.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 256.
  (C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 255.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 256.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 255.
+(Font)              <10.95> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 255.
+(Font)              <8> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 255.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 255.
+(Font)              <6> on input line 256.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 256.
  (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 255.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 256.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 255.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 256.
 
 (C:\Users\kelru\AppData\Roaming\MiKTeX\2.9\tex/latex/stmaryrd\ustmry.fd)
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 255.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 256.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 255.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 256.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 255.
-LaTeX Font Info:    Trying to load font information for U+euf on input line 255.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 256.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 256.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 255.
+(Font)              <9> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 255.
+(Font)              <5> on input line 256.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 255.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 256.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 255.
-LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 255.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 256.
+LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 256.
 
 (C:\Users\kelru\AppData\Roaming\MiKTeX\2.9\tex/latex/stix\ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
@@ -1701,7 +1701,7 @@ File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
 enc}]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 283.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 289.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1724,7 +1724,7 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ] [13
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 453--453
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 464--464
 [][][][]  
  []
 
@@ -1736,7 +1736,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [14
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 476--476
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 487--487
 [][][][]  
  []
 
@@ -1748,33 +1748,33 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \hbox (7.04929pt too wide) in paragraph at lines 546--546
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 557--557
  [] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 546.
+(Font)              <14.4> on input line 557.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 546.
+(Font)              <10> on input line 557.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 546.
+(Font)              <7> on input line 557.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 546.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 557.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 546.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 557.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 546.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 557.
 [16
 
 ]
-Overfull \hbox (7.04929pt too wide) in paragraph at lines 546--546
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 557--557
  [] 
  []
 
 [17
 
 ]
-Overfull \hbox (7.04929pt too wide) in paragraph at lines 614--614
+Overfull \hbox (7.04929pt too wide) in paragraph at lines 625--625
  [] 
  []
 
@@ -1792,10 +1792,20 @@ Overfull \hbox (7.04929pt too wide) in paragraph at lines 614--614
 
 ] [24
 
-] [25
+]
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 771--771
+[][][][]  
+ []
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[25
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 769--769
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 811--811
 [][][][]  
  []
 
@@ -1807,23 +1817,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [26
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 809--809
-[][][][]  
- []
-
-
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
 [27
 
-]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[28
+] [28
 
 ] [29
 
@@ -1832,38 +1832,26 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 ] [31
 
 ]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 893.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 904.
  (C:\Users\kelru\AppData\Roaming\MiKTeX\2.9\tex/latex/doublestroke\udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [32
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1095--1095
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1106--1106
 [][][][]  
  []
 
 [33
 
 ]
-Overfull \hbox (5.94662pt too wide) in paragraph at lines 1158--1158
+Overfull \hbox (5.94662pt too wide) in paragraph at lines 1169--1169
 [][]  
  []
 
 [34
 
 ] [35
-
-]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1195--1195
-[][][][]  
- []
-
-
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[36
 
 ]
 Overfull \hbox (2.12502pt too wide) in paragraph at lines 1206--1206
@@ -1875,7 +1863,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
-[37
+[36
 
 ]
 Overfull \hbox (2.12502pt too wide) in paragraph at lines 1217--1217
@@ -1887,10 +1875,22 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
 
+[37
+
+]
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1228--1228
+[][][][]  
+ []
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
 [38
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1231--1231
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1242--1242
 [][][][]  
  []
 
@@ -1902,14 +1902,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [39
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1245--1245
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1256--1256
 [][][][]  
  []
 
-<Foliation example.png, id=3933, 700.6175pt x 444.15938pt>
+<Foliation example.png, id=3799, 700.6175pt x 444.15938pt>
 File: Foliation example.png Graphic file (type png)
 <use Foliation example.png>
-Package pdftex.def Info: Foliation example.png  used on input line 1245.
+Package pdftex.def Info: Foliation example.png  used on input line 1256.
 (pdftex.def)             Requested size: 215.10196pt x 136.35962pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1919,14 +1919,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [40
 
  <./Foliation example.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1260--1260
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1271--1271
 [][][][]  
  []
 
-<Foliation connection.png, id=4032, 672.01062pt x 390.45876pt>
+<Foliation connection.png, id=3894, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1260.
+Package pdftex.def Info: Foliation connection.png  used on input line 1271.
 (pdftex.def)             Requested size: 307.28987pt x 178.54674pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1936,13 +1936,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [41
 
  <./Foliation connection.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1279--1279
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1290--1290
 [][][][]  
  []
 
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1279.
+Package pdftex.def Info: Foliation connection.png  used on input line 1290.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1952,12 +1952,12 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [42
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1303--1303
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1314--1314
 [][][][]  
  []
 
 
-Overfull \hbox (21.45601pt too wide) in paragraph at lines 1303--1303
+Overfull \hbox (21.45601pt too wide) in paragraph at lines 1314--1314
  [] 
  []
 
@@ -1971,14 +1971,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1324.
+Package pdftex.def Info: Foliation connection.png  used on input line 1335.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [44
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1352.
+Package pdftex.def Info: Foliation connection.png  used on input line 1363.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [45
 
@@ -1998,19 +1998,30 @@ Package pdftex.def Info: Foliation connection.png  used on input line 1352.
 
 ] [53
 
-] [54
+]
+Overfull \hbox (10.0757pt too wide) in paragraph at lines 1466--1466
+ [] 
+ []
 
-] [55
+[54
+
+]
+Overfull \hbox (10.0757pt too wide) in paragraph at lines 1466--1466
+ [] 
+ []
+
+[55
 
 ] [56
 
-] [57
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1496
+[]|\OT1/lmss/m/n/10.95 Different choice of $\LS1/stixscr/m/n/10.95 F$\OT1/lmss/m/n/10.95 -
+ []
+
+[57
 
 ] [58
-
-] [59
-
-] [60
 
 ]
 \tf@nav=\write7
@@ -2035,13 +2046,13 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 1363 ({)
+### simple group (level 1) entered at line 1374 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 52097 strings out of 474461
- 1205597 string characters out of 5750453
- 3335035 words of memory out of 5000000
- 73344 multiletter control sequences out of 15000+600000
+ 52083 strings out of 474461
+ 1205167 string characters out of 5750453
+ 3332185 words of memory out of 5000000
+ 73333 multiletter control sequences out of 15000+600000
  659434 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,29n,123p,1131b,8478s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2064,9 +2075,9 @@ X 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 KTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kelru/AppData/Roaming/MiKTeX/2.9/font
 s/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (60 pages, 1633228 bytes).
+Output written on Talk.pdf (58 pages, 1586888 bytes).
 PDF statistics:
- 5925 PDF objects out of 6186 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 2512 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5595 PDF objects out of 6186 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 2386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

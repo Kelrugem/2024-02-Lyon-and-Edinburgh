@@ -188,6 +188,7 @@ National Center for Theoretical Sciences (National Taiwan University)
 
 \section[cYM]{Curved Yang-Mills gauge theory}
 
+\subsection{Motivation}
 {
 \setbeamertemplate{footline}
 {
@@ -254,7 +255,12 @@ National Center for Theoretical Sciences (National Taiwan University)
 
 \end{frame}
 
-\begin{frame}{Guide: Infinitesimal curved Yang-Mills-Higgs gauge theory}
+}
+
+{
+\setbeamertemplate{footline}{}
+
+\begin{frame}{Motivation 1 by Thomas Strobl and Alexei Kotov}
 \setbeamercovered{invisible}
 \begin{table}[h!]
 		\begin{tabularx}{\textwidth}{X X}
@@ -288,16 +294,16 @@ $\rightsquigarrow$ We will use a general connection $\nabla$ instead of $\nabla^
 
 
 
-\subsection{Field Redefinition}
+%\subsection{Field Redefinition}
 {
 \setbeamertemplate{footline}{}
 
-\begin{frame}
+\begin{frame}{Motivation 2 by S.-R.\ F.}
 Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathup{Ad}(P)
+	(P \times \mathfrak{g})/G
 	\arrow[hook]{r}
 	\&
 	\mathup{At}(P)
@@ -322,7 +328,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	\end{gedankenexperiment}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Motivation 2 by S.-R.\ F.}
 Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
@@ -353,7 +359,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	\end{gedankenexperiment}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Motivation 2 by S.-R.\ F.}
 Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
@@ -403,6 +409,12 @@ But: In the {\color[rgb]{0.24,0.7,0.44} curved} sense! Curvature terms appear.
 
 \end{frame}
 
+}
+
+\subsection{Principal bundle}
+
+{
+\setbeamertemplate{footline}{}
 \begin{frame}
 \textbf{We will only focus on Yang-Mills theories:}
 
@@ -424,7 +436,6 @@ But: In the {\color[rgb]{0.24,0.7,0.44} curved} sense! Curvature terms appear.
 \end{center}
 
 \end{frame}
-
 }
 
 \renewcommand\insertreferences{{\tiny  K. Mackenzie. General Theory of Lie Groupoids and Algebroids. \newline \textit{London Mathematical Society Lecture Note Series}, 213, 2005.}}
@@ -686,7 +697,7 @@ But:
 \end{enumerate}
 \end{BackToTheRoots}
 \end{frame}
-\subsection{General notion of Ehresmann and Yang-Mills connections}
+%\subsection{General notion of Ehresmann and Yang-Mills connections}
 \begin{frame}
 \begin{definition}[Ehresmann/Yang-Mills connection, {[C.\ L.-G., S.-R.\ F.]}]
 A surjective submersion $\pi_{\mathcal{T}} \colon \mathcal{T} \to L$ so that one has a commuting diagram
@@ -732,15 +743,6 @@ On $\mathcal{G}$ there is also the notion of \textbf{multiplicative Yang-Mills c
 &=
 g_{\gamma_0} \cdot q \cdot g_{\gamma_0}^{-1}
 \eas
-\end{definition}
-
-\pause
-
-\begin{definition}[Principal bundle connection, {[S.-R.\ F.]}]
-\begin{itemize}
-	\item On $\mathcal{G}$: Multiplicative Yang-Mills connection
-	\item On $\mathcal{P}$: Ehresmann connection
-\end{itemize}
 \end{definition}
 \end{frame}
 }
@@ -813,16 +815,25 @@ with splitting $\chi \colon \mathrm{T}L \to E$, then
 {
 \setbeamertemplate{footline}{}
 \begin{frame}
-Given a multiplicative Yang-Mills connection on $\mathcal{G}$:
+%Given a multiplicative Yang-Mills connection on $\mathcal{G}$:
+
+\begin{definition}[Principal bundle connection, {[S.-R.\ F.]}]
+\begin{itemize}
+	\item On $\mathcal{G}$: Multiplicative Yang-Mills connection
+	\item On $\mathcal{P}$: Ehresmann connection
+\end{itemize}
+\end{definition}
+
+\pause
 
 \begin{definition}[Generalized curvature/field strength $F$ of $A$, {[S.-R.\ F.]}]
 We define
 \bas
 F
 &\coloneqq
-\mathrm{d}^{\pi_{\mathcal{P}}^*\nabla} A
-	+ \frac{1}{2} \mleft[ A \stackrel{\wedge}{,} A \mright]_{\pi_{\mathcal{P}}^*\mathcal{g}}
-	+ \pi_{\mathcal{P}}^!\zeta.
+\mathrm{d}^{\pi^*\nabla} A
+	+ \frac{1}{2} \mleft[ A \stackrel{\wedge}{,} A \mright]_{\pi^*\mathcal{g}}
+	+ \pi^!\zeta.
 \eas
 \end{definition}
 \end{frame}
@@ -1094,7 +1105,7 @@ This principal $c_{\mathrm{SU}(2)}(P)$-bundle admits the structure as curved Yan
 {
 \section[Foliations]{Applications: Singular foliations \\(joint work w/ Camille Laurent-Gengoux)}
 }
-
+\subsection{Why foliations?}
 {
 \setbeamertemplate{footline}
 {
@@ -1378,7 +1389,7 @@ We have
 \bas
 \mleft[ \mathbb{H}(X), \overline{\nu} \mright]
 &=
-\overline{ \nabla^{\mathcal{G}}_X \nu },
+\overline{ \nabla_X \nu },
 \\
 \mleft[ \mathbb{H}(X), \mathbb{H}(X^\prime) \mright]
 &=
@@ -1446,13 +1457,15 @@ The reconstructed foliation is independent of the choice of connection on $P$.
         \& 
         \Gamma(\mathrm{At}(P)) \arrow[two heads]{dr} \arrow{rr}{\xi \mapsto \overline{\xi}} 
         \&\&
-        \mathcal{F}_\pi \arrow[two heads]{dl}
+        \mathcal{F}_{\mathup{projectable}} \arrow[two heads]{dl}
         \&
         \\
         \&\& \arrow[bend left]{ul}{A} \mathfrak{X}(L) \arrow[bend right, swap]{ur}{\mathbb{H}} \&\&
 	\end{tikzcd}
 \end{center}
 \end{frame}
+
+\subsection{Summary}
 
 \begin{frame}{Summary}
 \begin{remark}[{[C.\ L.-G., S.-R.\ F.]}]
@@ -1463,30 +1476,42 @@ In the simply connected case, the following are equivalent:
 \end{itemize}
 \end{remark}
 
-\pause
-
-\begin{remark}[Classification of curved Yang-Mills gauge theories]
-If $\mathcal{G}$ acts faithfully on $\mathcal{T}$, then a curved Yang-Mills gauge theory can be flattened if and only if $P$ is flat.
-\end{remark}
 \end{frame}
 
-}
-
-\section{Future Prospects}
-{
-\setbeamertemplate{footline}{}
 \begin{frame}
-
-\begin{remark}[Future prospects]
-\begin{itemize}
-	\item Further applications of curved gauge theories (existence of Cartan connections,...)
-	\item Total space and Atiyah bundles of groupoid-based principal bundles
-	\item Field redefinitions as natural symmetry in associated applications
-\end{itemize}
+\begin{remark}[Classification of curved Yang-Mills gauge theories]
+If $\mathcal{G}$ acts faithfully on $\mathcal{T}$, preserving $L$, then a curved Yang-Mills gauge theory can be flattened if and only if $P$ is flat.
 \end{remark}
 
+\begin{table}[h!]
+		\begin{tabularx}{\textwidth}{X X}
+			\rowcolor{gray}
+			Curved YM Gauge Theory & Singular Foliations $\mathcal{F}$ \\
+			Multiplicative Yang-Mills connection & $\mathcal{F}$-connection \\
+			\rowcolor{Gray}
+			Flat gauge theory & Flat singular foliation \\
+			Field redefinition of connection on $\mathcal{G}$ & Different choice of $\mathcal{F}$-connection
+		\end{tabularx}
+\end{table}
 \end{frame}
+
 }
+
+%\section{Future Prospects}
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}
+%
+%\begin{remark}[Future prospects]
+%\begin{itemize}
+	%\item Further applications of curved gauge theories (existence of Cartan connections,...)
+	%\item Total space and Atiyah bundles of groupoid-based principal bundles
+	%\item Field redefinitions as natural symmetry in associated applications
+%\end{itemize}
+%\end{remark}
+%
+%\end{frame}
+%}
 \thispagestyle{empty}
 \topmargin -3.46 cm
 \vspace*{\fill}
