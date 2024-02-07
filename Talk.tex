@@ -306,14 +306,14 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	(P \times \mathfrak{g})/G
 	\arrow[hook]{r}
 	\&
-	\mathup{At}(P)
+	\mathup{T}P/G
 	\arrow[two heads]{r}
 	\&
 	\mathrm{T}L
 	\end{tikzcd}
 \end{center}
  
-	where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	%where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
 	\pause
 	\begin{gedankenexperiment}
 	\begin{enumerate}
@@ -333,10 +333,10 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathup{Ad}(P)
+	(P \times \mathfrak{g})/G
 	\arrow[hook]{r}
 	\&
-	\mathup{At}(P)
+	\mathup{T}P/G
 	\arrow[two heads]{r}
 	\&
 	\mathrm{T}L
@@ -364,10 +364,10 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 %$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathup{Ad}(P)
+	(P \times \mathfrak{g})/G
 	\arrow[hook]{r}
 	\&
-	\mathup{At}(P)
+	\mathup{T}P/G
 	\arrow[two heads]{r}
 	\&
 	\mathrm{T}L
@@ -814,7 +814,7 @@ with splitting $\chi \colon \mathrm{T}L \to E$, then
 
 {
 \setbeamertemplate{footline}{}
-\begin{frame}
+\begin{frame}{Integrating Alexei Kotov's and Thomas Strobl's idea}
 %Given a multiplicative Yang-Mills connection on $\mathcal{G}$:
 
 \begin{definition}[Principal bundle connection, {[S.-R.\ F.]}]
@@ -848,8 +848,8 @@ F
 \begin{theorem}[Lagrangian, {[S.-R.\ F.]}]
 \begin{itemize}
 	\item $\kappa$ be an $\mathrm{Ad}$-invariant fibre metric on $\mathcal{g}$, 
-	\item $M$ a spacetime, and $*$ its Hodge star operator, 
-	\item $\mleft( U_i \mright)_i$ open covering of $M$ with subordinate gauges $s_i \in \Gamma\mleft(\mathcal{P}|_{U_i}\mright)$.
+	\item $L$ a spacetime, and $*$ its Hodge star operator, 
+	\item $\mleft( U_i \mright)_i$ open covering of $L$ with subordinate gauges $s_i \in \Gamma\mleft(\mathcal{P}|_{U_i}\mright)$.
 \end{itemize}
 Then the Lagrangian $\mathfrak{L}_{\mathrm{CYM}}[A]$, defined locally by
 \bas
@@ -872,7 +872,7 @@ for all principal bundle automorphisms $K$.
 \begin{frame}
 \begin{BackToTheRoots}
 \begin{enumerate}
-	\item $\mathcal{G} \cong M \times G$
+	\item $\mathcal{G} \cong L \times G$
 	\item Equip $\mathcal{G}$ with canonical flat connection
 	%\pause
 	\item $\zeta \equiv 0$
