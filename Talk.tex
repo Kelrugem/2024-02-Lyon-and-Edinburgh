@@ -181,8 +181,13 @@ National Center for Theoretical Sciences (National Taiwan University)
 {
 \setbeamertemplate{footline}{}
 \begin{frame}
-\frametitle{Table of contents}
-\tableofcontents
+%\frametitle{Table of contents}
+%\tableofcontents
+\thispagestyle{empty}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1\textwidth]{Research circles I.pdf}
+\end{figure}
 \end{frame} 
 }
 
@@ -309,7 +314,7 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	\mathup{T}P/G
 	\arrow[two heads]{r}
 	\&
-	\mathrm{T}L
+	\mathrm{T}L \arrow[bend right, swap]{l}{A}
 	\end{tikzcd}
 \end{center}
  
@@ -318,12 +323,13 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	\begin{gedankenexperiment}
 	\begin{enumerate}
 		\item Adjoint connection $\leftrightarrow$ Ehresmann connection on $P$. 
-		\item As parallel transport along a curve $\gamma$:
+		\item Adjoint connection:
 		\begin{equation*}
-		\mathup{PT}_\gamma^{\mathup{Ad}(P)}([p, v])
-		=
-		\mleft[ \mathup{PT}_\gamma^P(p), v \mright]
+		\nabla_X \nu
+		\coloneqq
+		\mleft[ A(X), \nu \mright]_{\mathup{T}P/G}
 		\end{equation*}
+		for all $X \in \mathfrak{X}(L)$ and $\nu \in \Gamma((P \times \mathfrak{g})/G)$.
 	\end{enumerate}
 	\end{gedankenexperiment}
 \end{frame}
@@ -339,11 +345,42 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	\mathup{T}P/G
 	\arrow[two heads]{r}
 	\&
-	\mathrm{T}L
+	\mathrm{T}L \arrow[bend right, swap]{l}{A}
 	\end{tikzcd}
 \end{center}
  
-	where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	%where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	
+	\begin{gedankenexperiment}
+	\begin{enumerate}
+		\item Adjoint connection $\leftrightarrow$ Ehresmann connection on $P$. 
+		\item As parallel transport:
+		\begin{equation*}
+		\mathup{PT}_\gamma^{\mathup{Ad}(P)}([p, v])
+		=
+		\mleft[ \mathup{PT}_\gamma^P(p), v \mright]
+		\end{equation*}
+		for all $[p, v] \in (P \times \mathfrak{g})/G$.
+	\end{enumerate}
+	\end{gedankenexperiment}
+\end{frame}
+
+\begin{frame}{Motivation 2 by S.-R.\ F.}
+Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
+%$\mathbb{H}$ the horizontal distribution on $\mathcal{P} \tilde{\times} \mathcal{T}$:
+\begin{center}
+	\begin{tikzcd}[ampersand replacement=\&]
+	(P \times \mathfrak{g})/G
+	\arrow[hook]{r}
+	\&
+	\mathup{T}P/G
+	\arrow[two heads]{r}
+	\&
+	\mathrm{T}L \arrow[bend right, swap]{l}{A}
+	\end{tikzcd}
+\end{center}
+ 
+	%where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
 	
 	\begin{gedankenexperiment}
 	\begin{enumerate}
@@ -370,11 +407,11 @@ Consider a semisimple Lie group $G$ and a principal $G$-bundle $P \to L$:
 	\mathup{T}P/G
 	\arrow[two heads]{r}
 	\&
-	\mathrm{T}L
+	\mathrm{T}L \arrow[bend right, swap]{l}{A}
 	\end{tikzcd}
 \end{center}
  
-	where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
+	%where $\mathup{Ad}(P)$ and $\mathup{At}(P)$ the adjoint and Atiyah bundle of a principal $G$-bundle $P$, respectively. 
 	
 	\begin{gedankenexperiment}
 	\begin{enumerate}
@@ -444,7 +481,7 @@ But: In the {\color[rgb]{0.24,0.7,0.44} curved} sense! Curvature terms appear.
 \begin{definition}[LGB actions, simplified]
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&, column sep = small, row sep = small]
-	\& \mathcal{G} \arrow{d} \\
+	\& \arrow[bend right]{ld} \mathcal{G} \arrow{d} \\
 	\mathcal{P} \arrow{r}{\pi} \& L
 	\end{tikzcd}
 \end{center}
@@ -1103,7 +1140,7 @@ This principal $c_{\mathrm{SU}(2)}(P)$-bundle admits the structure as curved Yan
 %\section{Singular Foliations}
 
 {
-\section[Foliations]{Applications: Singular foliations \\(joint work w/ Camille Laurent-Gengoux)}
+\section[Foliations]{Applications: Classifying singular foliations \\(joint work w/ Camille Laurent-Gengoux)}
 }
 \subsection{Why foliations?}
 {
