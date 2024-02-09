@@ -1,5 +1,5 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Curved Yang-Mills gauge theory}{3}{0}{1}
+\beamer@sectionintoc {1}{Curved gauge theory}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Motivation}{4}{0}{1}
 \beamer@subsectionintoc {1}{2}{Principal bundle}{14}{0}{1}
 \beamer@subsectionintoc {1}{3}{Connections as parallel transport}{17}{0}{1}

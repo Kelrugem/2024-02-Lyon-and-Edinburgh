@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.7)  8 FEB 2024 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.7)  9 FEB 2024 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1683,11 +1683,7 @@ File: c70bkai.fd 2021/10/16 4.8.5
 )
 (C:\Users\User\AppData\Roaming\MiKTeX\tex/latex/cjk/UTF8\c70bkai.fdx
 File: c70bkai.fdx 2021/10/16 4.8.5
-)
-Overfull \vbox (8.40219pt too high) detected at line 178
- []
-
-[1
+) [1
 
 {C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Fil
 es/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./NCTS.png>]
@@ -1994,7 +1990,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 1293--1293
 [][][][]  
  []
 
-<Foliation example.png, id=3930, 700.6175pt x 444.15938pt>
+<Foliation example.png, id=3927, 700.6175pt x 444.15938pt>
 File: Foliation example.png Graphic file (type png)
 <use Foliation example.png>
 Package pdftex.def Info: Foliation example.png  used on input line 1293.
@@ -2011,7 +2007,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 1308--1308
 [][][][]  
  []
 
-<Foliation connection.png, id=4027, 672.01062pt x 390.45876pt>
+<Foliation connection.png, id=4024, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
 Package pdftex.def Info: Foliation connection.png  used on input line 1308.
@@ -2138,10 +2134,10 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
 ### simple group (level 1) entered at line 1411 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 52072 strings out of 474542
- 1197625 string characters out of 5754265
- 3328546 words of memory out of 5000000
- 73263 multiletter control sequences out of 15000+600000
+ 52066 strings out of 474542
+ 1197360 string characters out of 5754265
+ 3328535 words of memory out of 5000000
+ 73257 multiletter control sequences out of 15000+600000
  659434 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,29n,123p,1131b,8478s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2172,9 +2168,9 @@ onts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
 msy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/U
 sers/User/AppData/Roaming/MiKTeX/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (59 pages, 1622143 bytes).
+Output written on Talk.pdf (59 pages, 1621124 bytes).
 PDF statistics:
- 5756 PDF objects out of 6186 (max. 8388607)
+ 5753 PDF objects out of 6186 (max. 8388607)
  141 named destinations out of 1000 (max. 500000)
- 2415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2409 words of extra memory for PDF output out of 10000 (max. 10000000)
 
