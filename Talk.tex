@@ -830,19 +830,19 @@ Given a short exact sequence of algebroids
 	\begin{tikzcd}[ampersand replacement=\&]
 	\mathcal{g} \arrow[hook]{r}
 	\& E \arrow[two heads]{r}
-	\& \mathrm{T}L
+	\& \mathrm{T}L \arrow[bend right, swap]{l}{A}
 	\end{tikzcd}
 \end{center}
-with splitting $\chi \colon \mathrm{T}L \to E$, then
+with splitting $A \colon \mathrm{T}L \to E$, then
 \bas
 \nabla_X \nu
 &=
-\mleft[ \chi(X), \nu \mright]_E,
+\mleft[ A(X), \nu \mright]_E,
 \\
 \zeta\mleft( X, X' \mright)
 &=
-\mleft[ \chi(X), \chi(X') \mright]_E
-	- \chi\mleft( [X, X'] \mright).
+\mleft[ A(X), A(X') \mright]_E
+	- A\mleft( [X, X'] \mright).
 \eas
 \end{example}
 \end{frame}
@@ -1212,8 +1212,7 @@ This principal $c_{\mathrm{SU}(2)}(P)$-bundle admits the structure as curved Yan
 \textbf{Singular Foliations:}
 
 \begin{itemize}
-	\item Gauge Theory \newline 
-	(Ex.: Singular foliation $\leftrightarrow$ Symmetry breaking $\rightarrow$ Higgs mechanism)
+	\item Gauge Theory
 	\item Poisson Geometry \newline (Singular foliation of symplectic leaves)
 	\item Lie groupoids and algebroids
 	\item Dirac structures

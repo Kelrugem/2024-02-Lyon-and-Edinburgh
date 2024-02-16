@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.7)  9 FEB 2024 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.7)  16 FEB 2024 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1891,6 +1891,10 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 848--848
  []
 
 
+Overfull \vbox (4.05081pt too high) detected at line 848
+ []
+
+
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
@@ -1898,6 +1902,10 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [27
 
 ]
+Overfull \vbox (4.05081pt too high) detected at line 848
+ []
+
+
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [][][][] 
  []
@@ -1938,7 +1946,7 @@ Overfull \hbox (5.94662pt too wide) in paragraph at lines 1206--1206
 ] [36
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1243--1243
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1242--1242
 [][][][]  
  []
 
@@ -1950,7 +1958,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [37
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1254--1254
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1253--1253
 [][][][]  
  []
 
@@ -1962,7 +1970,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [38
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1265--1265
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1264--1264
 [][][][]  
  []
 
@@ -1974,7 +1982,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [39
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1279--1279
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1278--1278
 [][][][]  
  []
 
@@ -1986,14 +1994,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [40
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1293--1293
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1292--1292
 [][][][]  
  []
 
 <Foliation example.png, id=3927, 700.6175pt x 444.15938pt>
 File: Foliation example.png Graphic file (type png)
 <use Foliation example.png>
-Package pdftex.def Info: Foliation example.png  used on input line 1293.
+Package pdftex.def Info: Foliation example.png  used on input line 1292.
 (pdftex.def)             Requested size: 215.10196pt x 136.35962pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -2003,14 +2011,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [41
 
  <./Foliation example.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1308--1308
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1307--1307
 [][][][]  
  []
 
 <Foliation connection.png, id=4024, 672.01062pt x 390.45876pt>
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1308.
+Package pdftex.def Info: Foliation connection.png  used on input line 1307.
 (pdftex.def)             Requested size: 307.28987pt x 178.54674pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -2020,13 +2028,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [42
 
  <./Foliation connection.png>]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1327--1327
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1326--1326
 [][][][]  
  []
 
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1327.
+Package pdftex.def Info: Foliation connection.png  used on input line 1326.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
 
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -2036,12 +2044,12 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [43
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 1351--1351
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1350--1350
 [][][][]  
  []
 
 
-Overfull \hbox (21.45601pt too wide) in paragraph at lines 1351--1351
+Overfull \hbox (21.45601pt too wide) in paragraph at lines 1350--1350
  [] 
  []
 
@@ -2055,14 +2063,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1372.
+Package pdftex.def Info: Foliation connection.png  used on input line 1371.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [45
 
 ]
 File: Foliation connection.png Graphic file (type png)
 <use Foliation connection.png>
-Package pdftex.def Info: Foliation connection.png  used on input line 1400.
+Package pdftex.def Info: Foliation connection.png  used on input line 1399.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [46
 
@@ -2083,14 +2091,14 @@ Package pdftex.def Info: Foliation connection.png  used on input line 1400.
 ] [54
 
 ]
-Overfull \hbox (10.0757pt too wide) in paragraph at lines 1503--1503
+Overfull \hbox (10.0757pt too wide) in paragraph at lines 1502--1502
  [] 
  []
 
 [55
 
 ]
-Overfull \hbox (10.0757pt too wide) in paragraph at lines 1503--1503
+Overfull \hbox (10.0757pt too wide) in paragraph at lines 1502--1502
  [] 
  []
 
@@ -2099,7 +2107,7 @@ Overfull \hbox (10.0757pt too wide) in paragraph at lines 1503--1503
 ] [57
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1533--1533
+Underfull \hbox (badness 10000) in paragraph at lines 1532--1532
 []|\OT1/lmss/m/n/10.95 Different choice of $\LS1/stixscr/m/n/10.95 F$\OT1/lmss/
 m/n/10.95 -
  []
@@ -2131,13 +2139,13 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 1411 ({)
+### simple group (level 1) entered at line 1410 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 52066 strings out of 474542
- 1197360 string characters out of 5754265
- 3328535 words of memory out of 5000000
- 73257 multiletter control sequences out of 15000+600000
+ 52073 strings out of 474542
+ 1197499 string characters out of 5754265
+ 3328534 words of memory out of 5000000
+ 73264 multiletter control sequences out of 15000+600000
  659434 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,29n,123p,1131b,8478s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2168,7 +2176,7 @@ onts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
 msy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/U
 sers/User/AppData/Roaming/MiKTeX/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (59 pages, 1621124 bytes).
+Output written on Talk.pdf (59 pages, 1620982 bytes).
 PDF statistics:
  5753 PDF objects out of 6186 (max. 8388607)
  141 named destinations out of 1000 (max. 500000)
