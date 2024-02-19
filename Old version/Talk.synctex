@@ -1,5 +1,5 @@
 SyncTeX Version:1
-Input:1:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.tex
+Input:1:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.tex
 Input:2:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\beamer\beamer.cls
 Input:3:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\beamer\beamerbasemodes.sty
 Input:4:C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
@@ -246,13 +246,13 @@ Input:244:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\beamer\beamerinnertheme
 Input:245:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\beamer\beamercolorthemeorchid.sty
 Input:246:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\beamer\beamercolorthemewhale.sty
 Input:247:C:\Program Files\MiKTeX\tex\latex\lm\ot1lmss.fd
-Input:248:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.aux
+Input:248:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.aux
 Input:249:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\stix\ls1stix.fd
 Input:250:C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 Input:251:C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 Input:252:C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-Input:253:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.out
-Input:254:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.out
+Input:253:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.out
+Input:254:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.out
 Input:255:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\translator\translator-basic-dictionary-English.dict
 Input:256:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\translator\translator-bibliography-dictionary-English.dict
 Input:257:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\translator\translator-environment-dictionary-English.dict
@@ -260,7 +260,7 @@ Input:258:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\translator\translator-m
 Input:259:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\translator\translator-numbers-dictionary-English.dict
 Input:260:C:\Users\User\AppData\Roaming\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 Input:261:C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\english.lbx
-Input:262:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.bbl
+Input:262:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.bbl
 Output:pdf
 Magnification:1000
 Unit:1
@@ -268,13 +268,13 @@ X Offset:0
 Y Offset:0
 Content:
 k1,172:23867908,1529141:23867908
-!21371
+!21431
 k1,172:23867908,174759:23867908
 !39
 k1,172:23867908,174759:23867908
 !36
-Input:263:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.nav
-!68
+Input:263:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.nav
+!80
 !4
 (1,178:0,526254:526254,526254,0
 [1,178:0,526254:0,526254,0
@@ -87772,8 +87772,8 @@ g1,1559:22003228,16185419
 ]
 !1650
 }59
-Input:279:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Talk.aux
-!74
+Input:279:D:\PostDoc\Taiwan\2024-02-Lyon-and-Edinburgh\Old version\Talk.aux
+!86
 Postamble:
 Count:82677
 !27

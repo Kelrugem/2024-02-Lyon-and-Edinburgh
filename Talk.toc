@@ -1,16 +1,13 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Curved gauge theory}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Motivation}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Principal bundle}{14}{0}{1}
-\beamer@subsectionintoc {1}{3}{Connections as parallel transport}{17}{0}{1}
-\beamer@subsectionintoc {1}{4}{Field strength}{29}{0}{1}
-\beamer@subsectionintoc {1}{5}{Curved Yang-Mills gauge theory}{31}{0}{1}
-\beamer@subsectionintoc {1}{6}{Classical theory}{32}{0}{1}
-\beamer@subsectionintoc {1}{7}{Example}{33}{0}{1}
-\beamer@sectionintoc {2}{Applications: Classifying singular foliations \\(joint work w/ Camille Laurent-Gengoux)}{34}{0}{2}
-\beamer@subsectionintoc {2}{1}{Why foliations?}{35}{0}{2}
-\beamer@subsectionintoc {2}{2}{Definition}{37}{0}{2}
-\beamer@subsectionintoc {2}{3}{Idea: Relation to gauge theory}{42}{0}{2}
-\beamer@subsectionintoc {2}{4}{Reconstructing Foliations}{47}{0}{2}
-\beamer@subsectionintoc {2}{5}{Independency of choice of connection}{55}{0}{2}
-\beamer@subsectionintoc {2}{6}{Summary}{57}{0}{2}
+\beamer@sectionintoc {1}{Singular Foliations}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Definition}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Idea: Relation to gauge theory}{11}{0}{1}
+\beamer@sectionintoc {2}{Multiplicative Yang-Mills connections}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Lie group bundle actions}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Connections as parallel transport}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{General notion of Ehresmann and Yang-Mills connections}{28}{0}{2}
+\beamer@sectionintoc {3}{Foliations and Yang-Mills connections}{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{Reconstructing Foliations}{32}{0}{3}
+\beamer@subsectionintoc {3}{2}{Independency of choice of connection}{41}{0}{3}
+\beamer@subsectionintoc {3}{3}{Summary}{43}{0}{3}
+\beamer@subsectionintoc {3}{4}{General situation}{44}{0}{3}
