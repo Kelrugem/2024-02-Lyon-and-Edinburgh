@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Curved gauge theory}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivation}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Principal bundle}{14}{0}{1}
+\beamer@subsectionintoc {1}{3}{Connections as parallel transport}{17}{0}{1}
+\beamer@subsectionintoc {1}{4}{Field strength}{29}{0}{1}
+\beamer@subsectionintoc {1}{5}{Curved Yang-Mills gauge theory}{31}{0}{1}
+\beamer@subsectionintoc {1}{6}{Classical theory}{32}{0}{1}
+\beamer@subsectionintoc {1}{7}{Example}{33}{0}{1}
+\beamer@sectionintoc {2}{Applications: Classifying singular foliations \\(joint work w/ Camille Laurent-Gengoux)}{34}{0}{2}
+\beamer@subsectionintoc {2}{1}{Why foliations?}{35}{0}{2}
+\beamer@subsectionintoc {2}{2}{Definition}{37}{0}{2}
+\beamer@subsectionintoc {2}{3}{Idea: Relation to gauge theory}{42}{0}{2}
+\beamer@subsectionintoc {2}{4}{Reconstructing Foliations}{47}{0}{2}
+\beamer@subsectionintoc {2}{5}{Independency of choice of connection}{55}{0}{2}
+\beamer@subsectionintoc {2}{6}{Summary}{57}{0}{2}
