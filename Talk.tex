@@ -433,7 +433,7 @@ There is a connection on the normal bundle of a leaf $L$:
 	\label{fig:Foliation connection Zwei}
 \end{figure}
 
-\begin{remark}[$\mathcal{F}$-connections]
+\begin{remark}[$\mathcal{F}$-connection]
 For $\phi \in \mathup{Sym}(\tau_l)$ we have an induced parallel transport
 \bas
 \mathup{PT}_\gamma^{\mathup{Sym}}(\phi) \coloneqq \mathup{PT}_\gamma \circ \phi \circ \mathup{PT}_\gamma^{-1}.
@@ -449,8 +449,38 @@ Then, on the normal bundle $\pi \colon \mathcal{T} \to L$,
 &=
 \varphi \cdot p
 \eas
-for all $p \in \mathcal{T}$, $\phi \in \mathup{Sym}(\tau)$, and
-for some $\varphi \in \mathup{Inner}\mleft(\tau_{\pi(p)}\mright)$.
+for all $p \in \mathcal{T}_l$, $\phi \in \mathup{Sym}(\tau_l)$, and
+for some $\varphi \in \mathup{Inner}\mleft(\tau_{l}\mright)$.
+\end{remark}
+
+\end{frame}
+
+\begin{frame}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.4\textwidth]{Foliation connection.png}
+	%\caption{$\mathcal{F}$-connections}
+	\label{fig:Foliation connection Zwei}
+\end{figure}
+
+\begin{remark}[$\mathup{Sym}$-connection]
+For $\phi \in \mathup{Sym}(\tau_l)$ we have an induced parallel transport
+\bas
+\mathup{PT}_\gamma^{\mathup{Sym}}(\phi) \coloneqq \mathup{PT}_\gamma \circ \phi \circ \mathup{PT}_\gamma^{-1}.
+\eas
+Then
+\bas
+\mathup{PT}_\gamma(\phi \circ \phi')
+&=
+\mathup{PT}_\gamma^{\mathup{Sym}}(\phi) \circ
+\mathup{PT}_\gamma^{\mathup{Sym}}(\phi')
+\\
+\mathup{PT}^{\mathup{Sym}}_{\gamma_0}(\phi)
+&=
+\varphi \circ \phi \circ \varphi^{-1}
+\eas
+for all $\phi, \phi' \in \mathup{Sym}(\tau_l)$, and
+for some $\varphi \in \mathup{Inner}\mleft(\tau_{l}\mright)$.
 \end{remark}
 
 \end{frame}
@@ -629,7 +659,7 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 \draw (5,2) node {$\mathcal{T}_U$};
 \draw (3.5,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
-\draw (4.25,-3.9) node {\textcolor[rgb]{1,0,0}{$x$}};
+\draw (4.25,-4.2) node {\textcolor[rgb]{1,0,0}{$l$}};
 \draw (5,-3.6) node {$)$};
 \draw (4.25, -3) node {$U$};
 \draw (0,0) node {$\mathcal{T}$};
@@ -655,7 +685,7 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 \draw (15.5,2) node {$\mathcal{G}_U$};
 \draw (14,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
-\draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$x$}};
+\draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$l$}};
 \draw (15.5,-3.6) node {$)$};
 \draw (14.75, -2.9) node {$U$};
 
@@ -700,7 +730,7 @@ But:
 \draw (5,2) node {$\mathcal{T}_U$};
 \draw (3.5,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (4.25,-3.5) circle (1pt);
-\draw (4.25,-3.9) node {\textcolor[rgb]{1,0,0}{$x$}};
+\draw (4.25,-4.2) node {\textcolor[rgb]{1,0,0}{$l$}};
 \draw (5,-3.6) node {$)$};
 \draw (4.25, -3) node {$U$};
 \draw (0,0) node {$\mathcal{T}$};
@@ -727,7 +757,7 @@ But:
 \draw (15.5,2) node {$\mathcal{G}_U$};
 \draw (14,-3.4) node {$($};
 \filldraw [fill=red, draw=red] (14.75,-3.5) circle (1pt);
-\draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$x$}};
+\draw (14.75,-4.2) node {\textcolor[rgb]{1,0,0}{$l$}};
 \draw (15.5,-3.6) node {$)$};
 \draw (14.75, -2.9) node {$U$};
 
@@ -1032,21 +1062,28 @@ Thus, we have a singular foliation on $\mathcal{T}$, which, by construction, adm
 The reconstructed foliation is independent of the choice of connection on $P$.
 \end{proposition}
 \pause
-\begin{center}
-\begin{tikzcd}[ampersand replacement=\&]
-	\Gamma(\mathrm{Ad}(P)) \arrow[hook]{dr} \arrow{rrrr}{\nu \mapsto \overline{\nu}} 
-        \&\&\&\& 
-        \tau \arrow[hook]{dl}
-        \\
-        \& 
-        \Gamma(\mathrm{At}(P)) \arrow[two heads]{dr} \arrow{rr}{\xi \mapsto \overline{\xi}} 
-        \&\&
-        \mathcal{F}_{\mathup{projectable}} \arrow[two heads]{dl}
-        \&
-        \\
-        \&\& \arrow[bend left]{ul}{A} \mathfrak{X}(L) \arrow[bend right, swap]{ur}{\mathbb{H}} \&\&
-	\end{tikzcd}
-\end{center}
+\begin{proof}
+\begin{itemize}
+	\item The adjoint bundle of $P$, $\mathup{Ad}(P) \coloneqq (P \times \mathfrak{g})/G$, is the Lie algebra bundle of $\mathcal{G}$
+	\item $\tau = \overline{\mathup{Ad}(P)}$
+	\item Difference of two connections on $P$ has values in $\mathup{Ad}(P)$
+\end{itemize}
+\end{proof}
+%\begin{center}
+%\begin{tikzcd}[ampersand replacement=\&]
+	%\Gamma(\mathrm{Ad}(P)) \arrow[hook]{dr} \arrow{rrrr}{\nu \mapsto \overline{\nu}} 
+        %\&\&\&\& 
+        %\tau \arrow[hook]{dl}
+        %\\
+        %\& 
+        %\Gamma(\mathrm{At}(P)) \arrow[two heads]{dr} \arrow{rr}{\xi \mapsto \overline{\xi}} 
+        %\&\&
+        %\mathcal{F}_{\mathup{projectable}} \arrow[two heads]{dl}
+        %\&
+        %\\
+        %\&\& \arrow[bend left]{ul}{A} \mathfrak{X}(L) \arrow[bend right, swap]{ur}{\mathbb{H}} \&\&
+	%\end{tikzcd}
+%\end{center}
 \end{frame}
 
 \subsection{Summary}
@@ -1063,30 +1100,30 @@ In the simply connected case, the following are equivalent:
 \end{frame}
 }
 
-\subsection{General situation}
-{
-\setbeamertemplate{footline}{}
-\begin{frame}
-
-\begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
-Singular foliations with leaf $L$ and transverse model $(\mathbb{R}^d, \tau_l)$ are equivalent to the following triple:
-\begin{itemize}
-	\item A Galois cover $L'$ over $L$ with structural group $K$
-	\item A short exact sequence of groups
-	\begin{center}
-		\begin{tikzcd}[ampersand replacement=\&]
-		\mathup{Inner}(\tau_l) \arrow[hook]{r}
-		\&
-		H \arrow[two heads]{r}
-		\&
-		K
-		\end{tikzcd}
-	\end{center}
-	\item Double principal bundles $P$: An $H$-bundle over $L$, and an $\mathup{Inner}(\tau_l)$-bundle over $L'$
-\end{itemize}
-\end{theorem}
-
-\end{frame}
+%\subsection{General situation}
+%{
+%\setbeamertemplate{footline}{}
+%\begin{frame}
+%
+%\begin{theorem}[{[C.\ L.-G., S.-R.\ F.]}]
+%Singular foliations with leaf $L$ and transverse model $(\mathbb{R}^d, \tau_l)$ are equivalent to the following triple:
+%\begin{itemize}
+	%\item A Galois cover $L'$ over $L$ with structural group $K$
+	%\item A short exact sequence of groups
+	%\begin{center}
+		%\begin{tikzcd}[ampersand replacement=\&]
+		%\mathup{Inner}(\tau_l) \arrow[hook]{r}
+		%\&
+		%H \arrow[two heads]{r}
+		%\&
+		%K
+		%\end{tikzcd}
+	%\end{center}
+	%\item Double principal bundles $P$: An $H$-bundle over $L$, and an $\mathup{Inner}(\tau_l)$-bundle over $L'$
+%\end{itemize}
+%\end{theorem}
+%
+%\end{frame}
 }
 \thispagestyle{empty}
 \topmargin -3.46 cm
