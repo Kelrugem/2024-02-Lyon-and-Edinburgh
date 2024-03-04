@@ -374,7 +374,7 @@ Following the flows in $\mathcal{F}$, this gives rise to a partition of connecte
 	\centering
 		\includegraphics[width=1.00\textwidth]{Foliation connection.png}
 	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection}
+	\label{fig:Foliationconnection}
 \end{figure}
 
 \end{frame}
@@ -384,7 +384,7 @@ Following the flows in $\mathcal{F}$, this gives rise to a partition of connecte
 	\centering
 		\includegraphics[width=0.50\textwidth]{Foliation connection.png}
 	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Zwei}
+	\label{fig:FoliationconnectionZwei}
 \end{figure}
 
 \begin{theorem}[$\mathcal{F}$-connections]
@@ -430,7 +430,7 @@ There is a connection on the normal bundle of a leaf $L$:
 	\centering
 		\includegraphics[width=0.4\textwidth]{Foliation connection.png}
 	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Zwei}
+	\label{fig:FoliationconnectionDrei}
 \end{figure}
 
 \begin{remark}[$\mathcal{F}$-connection]
@@ -460,7 +460,7 @@ for some $\varphi \in \mathup{Inner}\mleft(\tau_{l}\mright)$.
 	\centering
 		\includegraphics[width=0.4\textwidth]{Foliation connection.png}
 	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Zwei}
+	\label{fig:FoliationconnectionVier}
 \end{figure}
 
 \begin{remark}[$\mathup{Sym}$-connection]
@@ -490,7 +490,7 @@ for some $\varphi \in \mathup{Inner}\mleft(\tau_{l}\mright)$.
 	\centering
 		\includegraphics[width=0.5\textwidth]{Foliation connection.png}
 	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Drei}
+	\label{fig:FoliationconnectionFuenf}
 \end{figure}
 
 \begin{idea}
@@ -508,7 +508,7 @@ where $X \in \mathfrak{X}(L)$, $\mathbb{H}(X)$ its projectable horizontal lift, 
 	\centering
 		\includegraphics[width=0.5\textwidth]{Foliation connection.png}
 	%\caption{$\mathcal{F}$-connections}
-	\label{fig:Foliation connection Vier}
+	\label{fig:FoliationconnectionSechs}
 \end{figure}
 \begin{idea}
 Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
@@ -516,9 +516,9 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 \mleft[ \mathbb{H}(X) + \overline{\nu}, \mathbb{H}\mleft({X^\prime}\mright) + \overline{\mu} \mright]
 &=
 \mathbb{H}\mleft(\mleft[ X, X' \mright]\mright) + 
-\overline{\vphantom{d}
+%\overline{\vphantom{d}
 \dots
-}
+%}
 \\
 &=
 \underbrace{\mleft[ \mathbb{H}(X), \mathbb{H}\mleft({X^\prime}\mright) \mright]}_{\rightsquigarrow \text{ curvature}}
@@ -529,6 +529,24 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 	+ \overline{\mleft[ \nu, \mu \mright]}
 \eas
 \end{idea}
+\end{frame}
+
+\begin{frame}{Summary}
+\begin{tikzcd}[ampersand replacement=\&]
+\&\arrow{dl} \text{Foliation } \mathcal{F} \arrow{dr}\& 
+\\
+\text{Connection on } \mathcal{T} \arrow{rr} \arrow{ur}
+\&\&
+\text{Connection on } \mathup{Sym}(\tau) \arrow{ll} \arrow{ul}
+\end{tikzcd}
+\begin{remark}
+Connections 
+\begin{itemize}
+	\item preserve group bundle action, 
+	\item and their curvatures follow corresponding orbits.
+\end{itemize}
+The pair of connections may \textbf{not} be unique for a given $\mathcal{F}$!
+\end{remark}
 \end{frame}
 }
 
