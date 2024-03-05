@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  4 MAR 2024 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.1.3)  5 MAR 2024 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1856,12 +1856,7 @@ Package pdftex.def Info: Foliation connection.png  used on input line 532.
 (pdftex.def)             Requested size: 153.64493pt x 89.27336pt.
  [17
 
-]
-Overfull \hbox (12.44136pt too wide) in paragraph at lines 550--550
-[][]  
- []
-
-[18
+] [18
 
 ] [19
 
@@ -1870,7 +1865,7 @@ Overfull \hbox (12.44136pt too wide) in paragraph at lines 550--550
 ] [21
 
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 624--624
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 631--631
 [][][][]  
  []
 
@@ -1882,21 +1877,21 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [22
 
 ]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 719--719
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 726--726
  [] 
  []
 
 [23
 
 ]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 719--719
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 726--726
  [] 
  []
 
 [24
 
 ]
-Overfull \hbox (7.06024pt too wide) in paragraph at lines 789--789
+Overfull \hbox (7.06024pt too wide) in paragraph at lines 796--796
  [] 
  []
 
@@ -1914,24 +1909,15 @@ Overfull \hbox (7.06024pt too wide) in paragraph at lines 789--789
 
 ] [31
 
+] [32
+
 ]
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 992--992
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 1003--1003
 [][][][]  
  []
 
 
-Overfull \vbox (3.49533pt too high) detected at line 992
- []
-
-
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[][][][] 
- []
-
-[32
-
-]
-Overfull \vbox (3.49533pt too high) detected at line 992
+Overfull \vbox (3.49533pt too high) detected at line 1003
  []
 
 
@@ -1941,7 +1927,16 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [33
 
-] [34
+]
+Overfull \vbox (3.49533pt too high) detected at line 1003
+ []
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[34
 
 ] [35
 
@@ -1967,6 +1962,8 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ] [46
 
+] [47
+
 ]
 \tf@nav=\write7
 \openout7 = `Talk.nav'.
@@ -1989,10 +1986,10 @@ Package logreq Info: Writing requests to 'Talk.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51563 strings out of 474461
- 1192037 string characters out of 5750453
+ 51644 strings out of 474461
+ 1194088 string characters out of 5750453
  3098655 words of memory out of 5000000
- 72859 multiletter control sequences out of 15000+600000
+ 72938 multiletter control sequences out of 15000+600000
  640667 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,123p,1131b,8501s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2013,9 +2010,9 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
 am Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/kelru/AppData/Roaming/MiKT
 eX/2.9/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on Talk.pdf (46 pages, 1250543 bytes).
+Output written on Talk.pdf (47 pages, 1268664 bytes).
 PDF statistics:
- 3724 PDF objects out of 4296 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 1869 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3796 PDF objects out of 4296 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 1965 words of extra memory for PDF output out of 10000 (max. 10000000)
 

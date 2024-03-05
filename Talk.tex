@@ -532,12 +532,19 @@ Fix $l$ and given $\tau_l$: Reconstruct $\mathcal{F}$.
 \end{frame}
 
 \begin{frame}{Summary}
+%\begin{tikzcd}[ampersand replacement=\&]
+%\&\arrow{dl} \text{Foliation } \mathcal{F} \arrow{dr}\& 
+%\\
+%\text{Connection on } \mathcal{T} \arrow{rr} \arrow{ur}
+%\&\&
+%\text{Connection on } \mathup{Sym}(\tau) \arrow{ll} \arrow{ul}
+%\end{tikzcd}
 \begin{tikzcd}[ampersand replacement=\&]
-\&\arrow{dl} \text{Foliation } \mathcal{F} \arrow{dr}\& 
+\&\{\text{Connection on } \mathcal{T}\} \arrow{dd} \arrow{dl}\arrow{dr}\&
 \\
-\text{Connection on } \mathcal{T} \arrow{rr} \arrow{ur}
-\&\&
-\text{Connection on } \mathup{Sym}(\tau) \arrow{ll} \arrow{ul}
+\arrow{dr} \text{Foliation } \mathcal{F} \arrow{ur}\&\& \arrow{ul} \arrow{dl} ?
+\\
+\&\{\text{Connection on } \mathup{Sym}(\tau)\} \arrow{uu} \arrow{ul}\arrow{ur}\&
 \end{tikzcd}
 \begin{remark}
 Connections 
@@ -910,6 +917,10 @@ On $\mathcal{G}$ there is also the notion of \textbf{multiplicative Yang-Mills c
 g_{\gamma_0} \cdot q \cdot g_{\gamma_0}^{-1}
 \eas
 \end{definition}
+\pause
+\begin{remark}
+Compare this with the Maurer-Cartan form and its curvature equation!
+\end{remark}
 
 %\pause
 %
@@ -1111,9 +1122,17 @@ The reconstructed foliation is independent of the choice of connection on $P$.
 In the simply connected case, the following are equivalent:
 \begin{itemize}
 	\item Singular foliations with leaf $L$ and transverse model $\mleft(\mathbb{R}^d, \tau_l\mright)$
-	\item Principal $\mathrm{Inner}(\tau_l)$-bundles over $L$
+	\item Principal $\mathrm{Inner}(\tau_l)$-bundles $P$ over $L$
 \end{itemize}
 \end{remark}
+
+\begin{tikzcd}[ampersand replacement=\&]
+\&\{\text{Connection on } \mathcal{T}\} \arrow{dd} \arrow{dl}\arrow{dr}\&
+\\
+\arrow{dr} \text{Foliation } \mathcal{F} \arrow{ur}\&\& \arrow{ul} \arrow{dl} P
+\\
+\&\{\text{Connection on } \mathup{Sym}(\tau)\} \arrow{uu} \arrow{ul}\arrow{ur}\&
+\end{tikzcd}
 
 \end{frame}
 }
