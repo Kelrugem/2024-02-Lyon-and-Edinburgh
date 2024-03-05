@@ -423,6 +423,51 @@ There is a connection on the normal bundle of a leaf $L$:
 \end{frame}
 
 {
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.09\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}
+		Sources
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}
+		Diagram made by Camille Laurent-Gengoux.
+  \end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %%\insertframenumber{} 
+		%%/ \inserttotalframenumber\hspace*{2ex} 
+  %\end{beamercolorbox}
+	}%
+  \vskip0pt%
+}
+\begin{frame}
+
+%\begin{minipage}[]{0.45\textwidth}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=1.00\textwidth]{snake.png}
+	\label{fig:snake}
+\end{figure}
+%\end{center}
+%\end{minipage}
+%\hfill
+%\begin{minipage}[]{0.45\textwidth}
+%\begin{remark}
+%\begin{itemize}
+	%\item $\mathup{Inner}(\tau_l)$ maps each circle to itself
+	%\item $\mathup{Sym}(\tau_l)$ allows to exchange circles
+	%\item Both preserve $\tau_l$ and fix the origin
+%\end{itemize}
+%\end{remark}
+%\end{minipage}
+\end{frame}
+}
+
+
+{
 \setbeamertemplate{footline}{}
 
 \begin{frame}
@@ -470,7 +515,7 @@ For $\phi \in \mathup{Sym}(\tau_l)$ we have an induced parallel transport
 \eas
 Then
 \bas
-\mathup{PT}_\gamma(\phi \circ \phi')
+\mathup{PT}_\gamma^{\mathup{Sym}}(\phi \circ \phi')
 &=
 \mathup{PT}_\gamma^{\mathup{Sym}}(\phi) \circ
 \mathup{PT}_\gamma^{\mathup{Sym}}(\phi')
@@ -720,7 +765,7 @@ for all $p \in \mathcal{T}$ and $g, h \in \mathcal{G}_{\pi(p)}$, where $e_{\pi(p
 \pause
 But:
 \bas
-&&&r_g \colon \mathcal{T}_x \to \mathcal{T}_x\\
+&&&r_g \colon \mathcal{T}_l \to \mathcal{T}_l\\
 &\Rightarrow&&\mathrm{D}_pr_g \text{ only defined on vertical structure}
 \eas
 \end{frame}
@@ -791,7 +836,7 @@ But:
 \end{figure}
 
 \bas
-\text{Use } \sigma \in \Gamma(\mathcal{G})\colon r_\sigma(p) \coloneqq p \cdot \sigma_{x}
+\text{Use } \sigma \in \Gamma(\mathcal{G})\colon r_\sigma(p) \coloneqq p \cdot \sigma_{l}
 \eas
 \end{frame}
 
@@ -980,24 +1025,24 @@ R_{\nabla}
 \end{remark}
 \pause
 \begin{example}
-Given a short exact sequence of algebroids 
+Consider the Atiyah sequence of a principal $G$-bundle $P$: 
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
-	\mathcal{g} \arrow[hook]{r}
-	\& E \arrow[two heads]{r}
-	\& \mathrm{T}L \arrow[bend right, swap]{l}{\chi}
+	( P \times \mathfrak{g} ) / G \arrow[hook]{r}
+	\& \mathup{T}P/G \arrow[two heads]{r}
+	\& \mathup{T}L \arrow[bend right, swap]{l}{\mathbb{H}}
 	\end{tikzcd}
 \end{center}
-with splitting $\chi \colon \mathrm{T}L \to E$, then
+with splitting $\mathbb{H} \colon \mathrm{T}L \to E$, where $\mathfrak{g}$ is the Lie algebra. Then
 \bas
 \nabla_X \nu
 &=
-\mleft[ \chi(X), \nu \mright]_E,
+\mleft[ \mathbb{H}(X), \nu \mright]_E,
 \\
 \zeta\mleft( X, X' \mright)
 &=
-\mleft[ \chi(X), \chi(X') \mright]_E
-	- \chi\mleft( [X, X'] \mright).
+\mleft[ \mathbb{H}(X), \mathbb{H}(X') \mright]_E
+	- \mathbb{H}\mleft( [X, X'] \mright).
 \eas
 \end{example}
 \end{frame}
