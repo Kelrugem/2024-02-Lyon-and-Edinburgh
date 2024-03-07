@@ -131,7 +131,7 @@ National Center for Theoretical Sciences (National Taiwan University)
 \newtheorem*{fieldredefinition}{Field Redefinition}
 \newtheorem*{construction}{Construction}
 \newtheorem*{aim}{Aim}
-\newtheorem*{BackToTheRoots}{Back to the roots}
+\newtheorem*{BackToTheRoots}{Recovering the ordinary definition}
 
 \AtBeginEnvironment{BackToTheRoots}{%
   \setbeamercolor{block title}{use=example text,fg=black,bg=pink!75!black}
@@ -398,6 +398,8 @@ There is a connection on the normal bundle of a leaf $L$:
 
 \end{frame}
 
+{
+\setbeamertemplate{footline}{}
 \begin{frame}{Example of a transverse foliation $\tau$:}
 %\begin{center}
 \begin{minipage}[]{0.45\textwidth}
@@ -421,6 +423,8 @@ There is a connection on the normal bundle of a leaf $L$:
 \end{remark}
 \end{minipage}
 \end{frame}
+}
+
 
 {
 \setbeamertemplate{footline}
@@ -433,7 +437,7 @@ There is a connection on the normal bundle of a leaf $L$:
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.91\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
     \usebeamerfont{title in head/foot}
-		Diagram made by Camille Laurent-Gengoux.
+		Diagram drawn by Camille Laurent-Gengoux.
   \end{beamercolorbox}%
   %\begin{beamercolorbox}[wd=.175\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
     %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
@@ -469,6 +473,26 @@ There is a connection on the normal bundle of a leaf $L$:
 
 {
 \setbeamertemplate{footline}{}
+
+\begin{frame}{Other example: Regular foliation}
+\begin{figure}
+\begin{tikzpicture}
+\foreach \k in {-4,...,4} \draw[dotted] (-2, 0.1*\k) -- (2, 0.1*\k);
+\end{tikzpicture}
+\end{figure}
+
+\begin{BackToTheRoots}
+%\begin{table}[htbp]
+	\centering
+		\begin{tabular}{l|l}
+			Foliation & Connection \\ \hline
+			Regular & Flat lift \\
+			Singular & Family of possibly curved lifts
+		\end{tabular}
+%\end{table}
+\end{BackToTheRoots}
+
+\end{frame}
 
 \begin{frame}
 \begin{figure}[htbp]
@@ -1025,7 +1049,7 @@ R_{\nabla}
 \end{remark}
 \pause
 \begin{example}
-Consider the Atiyah sequence of a principal $G$-bundle $P$: 
+Consider the Atiyah sequence of a principal $G$-bundle $P$: \vspace{-0.25cm}
 \begin{center}
 	\begin{tikzcd}[ampersand replacement=\&]
 	( P \times \mathfrak{g} ) / G \arrow[hook]{r}
@@ -1033,15 +1057,16 @@ Consider the Atiyah sequence of a principal $G$-bundle $P$:
 	\& \mathup{T}L \arrow[bend right, swap]{l}{\mathbb{H}}
 	\end{tikzcd}
 \end{center}
+\vspace{-0.25cm}
 with splitting $\mathbb{H} \colon \mathrm{T}L \to E$, where $\mathfrak{g}$ is the Lie algebra. Then
 \bas
 \nabla_X \nu
 &=
-\mleft[ \mathbb{H}(X), \nu \mright]_E,
+\mleft[ \mathbb{H}(X), \nu \mright]_{\mathup{T}P/G},
 \\
 \zeta\mleft( X, X' \mright)
 &=
-\mleft[ \mathbb{H}(X), \mathbb{H}(X') \mright]_E
+\mleft[ \mathbb{H}(X), \mathbb{H}(X') \mright]_{\mathup{T}P/G}
 	- \mathbb{H}\mleft( [X, X'] \mright).
 \eas
 \end{example}
